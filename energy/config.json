@@ -1,36 +1,1602 @@
 {
-  "version": "3.0.2",
+  "version": "1.0.0",
   "layout": {
     "navigation": {
       "logo": "https://www.esa.int/extension/pillars/design/pillars/images/ESA_Logo.svg",
-      "title": "EO Best Practices - Energy"
+      "title": "EOBPs - Solar Energy"
     }
   },
-  "interfaceGroups": [],
-  "exclusivitySets": [
-    "labels"
+  "interfaceGroups": [
+    "Final Suitability Map - Kent",
+    "Binary Constraint Layers - Kent",
+    "Factor Layers - Kent",
+    "LST analysis with SSI - Hollyhurst Farm",
+    "LST analysis with DNI - Hollyhurst Farm",
+    "Max/Min daily LST - Hollyhurst Farm"
   ],
-  "services": [],
+  "exclusivitySets": [],
   "sources": [
     {
-      "name": "Open StreetMap",
+      "name": "\u00a9 OpenStreetMap contributors \u00a9 CARTO",
       "isActive": true,
+      "layout": {
+        "interfaceGroup": "Basemaps"
+      },
+      "meta": {
+        "description": "Open Street Map base layer",
+        "attribution": {
+          "text": "\u00a9 OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright"
+        }
+      },
       "data": [
         {
           "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
           "format": "xyz",
-          "zIndex": 1
+          "zIndex": 0
         }
       ],
-      "isBaseLayer": true,
+      "isBaseLayer": true
+    },
+    {
+      "name": "Final Suitability Map - Classes",
+      "isActive": false,
       "meta": {
-        "description": "",
+        "description": "A suitability map that categorizes Kent into different suitability levels based on their suitability for developing a solar farm: \u2018Not Suitable,\u2019 \u2018Least Suitable,\u2019 \u2018Moderately Suitable,\u2019 and \u2018Most Suitable\u2019.",
         "attribution": {
-          "text": "OpenStreetMap",
-          "url": "https://www.openstreetmap.org/copyright"
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": [
+          {
+            "color": "#959191",
+            "label": "Constriant areas",
+            "value": 1
+          },
+          {
+            "color": "#B2E0AB",
+            "label": "Least Suitable",
+            "value": 2
+          },
+          {
+            "color": "#3DA75A",
+            "label": "Moderately Suitable",
+            "value": 3
+          },
+          {
+            "color": "#00441B",
+            "label": "Most Suitable",
+            "value": 4
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/Final_Suitability_Map_Classes.tif"
+          }
+        },
+        "interfaceGroup": "Final Suitability Map - Kent"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/Final_Suitability_Map_Classes.tif",
+          "zIndex": 1,
+          "format": "cog"
+        }
+      ]
+    },
+    {
+      "name": "Final Suitability Map - Values",
+      "isActive": false,
+      "meta": {
+        "description": "A map that scores areas in Kent on a scale from 0 (least suitable) to 1 (most suitable) according to their potential for solar farm development.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": [],
+        "min": 0,
+        "max": 1,
+        "startColor": "#f7fcf5",
+        "endColor": "#00441b"
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "gradient"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/Final_Suitability_Map_Values.tif"
+          }
+        },
+        "interfaceGroup": "Final Suitability Map - Kent"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/Final_Suitability_Map_Values.tif",
+          "zIndex": 1,
+          "format": "cog"
+        }
+      ]
+    },
+    {
+      "name": "C1 - Historically important areas",
+      "isActive": false,
+      "meta": {
+        "description": "The presence of historically important areas and their respective 100 m buffer were classified as unsuitable areas. The historically important areas used in this study were obtained from the Open Data Hub of English Heritage.  Four key categories of historical sites were considered: Scheduled Monuments, Wreck Sites, World Heritage, and Registered Battlefields.",
+        "attribution": {
+          "text": "English Heritage",
+          "url": "https://historicengland.org.uk/listing/the-list/data-downloads/"
+        },
+        "categories": [
+          {
+            "color": "#DE1313",
+            "label": "Unsuitable",
+            "value": 1
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/C1_Historically_important_areas.tif"
+          }
+        },
+        "interfaceGroup": "Binary Constraint Layers - Kent"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/C1_Historically_important_areas.tif",
+          "zIndex": 1,
+          "format": "cog"
+        }
+      ]
+    },
+    {
+      "name": "C2 - Wildlife designations",
+      "isActive": false,
+      "meta": {
+        "description": "The presence of wildlife designations and their respective 100 m buffer were classified as unsuitable areas. The wildlife designations used in this study were obtained from the Natural England Open Data Geoportal. Five key categories of wildlife designations were considered: Special Areas of Conservation (SAC), Special Protection Areas (SPA), Ramsar Sites, Sites of Special Scientific Interest (SSSI), and Local Nature Reserves (LNRs).",
+        "attribution": {
+          "text": "Natural England",
+          "url": "https://naturalengland-defra.opendata.arcgis.com/"
+        },
+        "categories": [
+          {
+            "color": "#DE1313",
+            "label": "Unsuitable",
+            "value": 1
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/C2_Wildlife_designations.tif"
+          }
+        },
+        "interfaceGroup": "Binary Constraint Layers - Kent"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/C2_Wildlife_designations.tif",
+          "zIndex": 1,
+          "format": "cog"
+        }
+      ]
+    },
+    {
+      "name": "C3 - Agricultural land classification",
+      "isActive": false,
+      "meta": {
+        "description": "Agricultural land classification dataset from Natiural England consists of six nationally recognised grades of land; grade 1 was classified as unsuitable due to their high arable value.",
+        "attribution": {
+          "text": "Natural England",
+          "url": "https://naturalengland-defra.opendata.arcgis.com/"
+        },
+        "categories": [
+          {
+            "color": "#DE1313",
+            "label": "Unsuitable",
+            "value": 1
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/C3_Agricultural_land_classification.tif"
+          }
+        },
+        "interfaceGroup": "Binary Constraint Layers - Kent"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/C3_Agricultural_land_classification.tif",
+          "zIndex": 1,
+          "format": "cog"
+        }
+      ]
+    },
+    {
+      "name": "C4 - Land use constraint",
+      "isActive": false,
+      "meta": {
+        "description": "The following land use classes and their respective 100 m buffer were classified as unsuitable areas: continuous and discontinuous urban fabric, industrial or commercial units, road and rail networks and associated land, port areas, airports, mineral extraction sites, dump sites, construction sites, green urban areas, sport and leisure facilities, water bodies, and estuaries.",
+        "attribution": {
+          "text": "CORINE land cover",
+          "url": "https://land.copernicus.eu/en/products/corine-land-cover"
+        },
+        "categories": [
+          {
+            "color": "#DE1313",
+            "label": "Unsuitable",
+            "value": 1
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/C4_Land_use_constraint.tif"
+          }
+        },
+        "interfaceGroup": "Binary Constraint Layers - Kent"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/C4_Land_use_constraint.tif",
+          "zIndex": 1,
+          "format": "cog"
+        }
+      ]
+    },
+    {
+      "name": "C5 - Slope: How steep or flat the land is",
+      "isActive": false,
+      "meta": {
+        "description": "The slope data was categorized to mark any gradients over 14% as unsuitable, as they would be too steep for development. ",
+        "attribution": {
+          "text": " LIDAR Composite Digital Terrain Model (DTM) - 1m",
+          "url": "https://www.data.gov.uk/dataset/01b3ee39-da3f-47b6-83da-dc98e73a461f/lidar-composite-digital-terrain-model-dtm-1m"
+        },
+        "categories": [
+          {
+            "color": "#DE1313",
+            "label": "Unsuitable",
+            "value": 1
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/C5_Slope_How_steep_or_flat_the_land_is.tif"
+          }
+        },
+        "interfaceGroup": "Binary Constraint Layers - Kent"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/C5_Slope_How_steep_or_flat_the_land_is.tif",
+          "zIndex": 1,
+          "format": "cog"
+        }
+      ]
+    },
+    {
+      "name": "C6 - Aspect: The direction the land faces (e.g., north, south)",
+      "isActive": false,
+      "meta": {
+        "description": "Slopes facing southeast to southwest, as well as any aspects with a slope of less than 5%, were classified as suitable. All other cases were considered unsuitable.",
+        "attribution": {
+          "text": " LIDAR Composite Digital Terrain Model (DTM) - 1m",
+          "url": "https://www.data.gov.uk/dataset/01b3ee39-da3f-47b6-83da-dc98e73a461f/lidar-composite-digital-terrain-model-dtm-1m"
+        },
+        "categories": [
+          {
+            "color": "#DE1313",
+            "label": "Unsuitable",
+            "value": 1
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/C6_Aspect_The_direction_the_land_faces(e.tif"
+          }
+        },
+        "interfaceGroup": "Binary Constraint Layers - Kent"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/C6_Aspect_The_direction_the_land_faces(e.tif",
+          "zIndex": 1,
+          "format": "cog"
+        }
+      ]
+    },
+    {
+      "name": "F1 - Direct Normalized Solar Irradiation (DNI)",
+      "isActive": false,
+      "meta": {
+        "description": "The higher the Direct Normalized Solar Irradiation (DNI), the more suitable the location for solar farm development - on a scale from 0 (least suitable) to 1 (most suitable)",
+        "attribution": {
+          "text": "Surface Radiation Data Set - Heliosat (SARAH) from EUMESTAT",
+          "url": "https://user.eumetsat.int/catalogue/EO:EUM:DAT:0863"
+        },
+        "categories": [],
+        "min": 0,
+        "max": 1,
+        "startColor": "#f7fcf5",
+        "endColor": "#00441b"
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "gradient"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/F1_Direct_Normalized_Solar_Irradiation(DNI).tif"
+          }
+        },
+        "interfaceGroup": "Factor Layers - Kent"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/F1_Direct_Normalized_Solar_Irradiation(DNI).tif",
+          "zIndex": 1,
+          "format": "cog"
+        }
+      ]
+    },
+    {
+      "name": "F1 - Solar Surface Irradiance (SIS)",
+      "isActive": false,
+      "meta": {
+        "description": "The higher the Solar Surface Irradiance (SIS), the more suitable the location for solar farm development - on a scale from 0 (least suitable) to 1 (most suitable)",
+        "attribution": {
+          "text": "Surface Radiation Data Set - Heliosat (SARAH) from EUMESTAT",
+          "url": "https://user.eumetsat.int/catalogue/EO:EUM:DAT:0863"
+        },
+        "categories": [],
+        "min": 0,
+        "max": 1,
+        "startColor": "#f7fcf5",
+        "endColor": "#00441b"
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "gradient"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/F1_Solar_Surface_Irradiance(SIS).tif"
+          }
+        },
+        "interfaceGroup": "Factor Layers - Kent"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/F1_Solar_Surface_Irradiance(SIS).tif",
+          "zIndex": 1,
+          "format": "cog"
+        }
+      ]
+    },
+    {
+      "name": "F2 - Distance from historically important areas",
+      "isActive": false,
+      "meta": {
+        "description": "The greater the distance from historically important areas, the more suitable the location for solar farm development - on a scale from 0 (least suitable) to 1 (most suitable)",
+        "attribution": {
+          "text": "English Heritage",
+          "url": "https://historicengland.org.uk/listing/the-list/data-downloads/"
+        },
+        "categories": [],
+        "min": 0,
+        "max": 1,
+        "startColor": "#f7fcf5",
+        "endColor": "#00441b"
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "gradient"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/F2_Distance_from_historically_important areas.tif"
+          }
+        },
+        "interfaceGroup": "Factor Layers - Kent"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/F2_Distance_from_historically_important areas.tif",
+          "zIndex": 1,
+          "format": "cog"
+        }
+      ]
+    },
+    {
+      "name": "F3 - Distance from wildlife designations",
+      "isActive": false,
+      "meta": {
+        "description": "The greater the distance from wildlife designations, the more suitable the location for solar farm development - on a scale from 0 (least suitable) to 1 (most suitable)",
+        "attribution": {
+          "text": "Natural England",
+          "url": "https://naturalengland-defra.opendata.arcgis.com/"
+        },
+        "categories": [],
+        "min": 0,
+        "max": 1,
+        "startColor": "#f7fcf5",
+        "endColor": "#00441b"
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "gradient"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/F3_Distance_from_wildlife_designations.tif"
+          }
+        },
+        "interfaceGroup": "Factor Layers - Kent"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/F3_Distance_from_wildlife_designations.tif",
+          "zIndex": 1,
+          "format": "cog"
+        }
+      ]
+    },
+    {
+      "name": "F4 - Distance from Built-Up areas",
+      "isActive": false,
+      "meta": {
+        "description": "The greater the distance from built-up areas, the more suitable the location for solar farm development  - on a scale from 0 (least suitable) to 1 (most suitable)",
+        "attribution": {
+          "text": "CORINE land cover",
+          "url": "https://land.copernicus.eu/en/products/corine-land-cover"
+        },
+        "categories": [],
+        "min": 0,
+        "max": 1,
+        "startColor": "#f7fcf5",
+        "endColor": "#00441b"
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "gradient"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/F4_Distance_from_Built_Up_areas.tif"
+          }
+        },
+        "interfaceGroup": "Factor Layers - Kent"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/F4_Distance_from_Built_Up_areas.tif",
+          "zIndex": 1,
+          "format": "cog"
+        }
+      ]
+    },
+    {
+      "name": "January 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in January over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
         },
         "categories": []
-      }
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_SSI_January2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with SSI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "February 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in February over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_SSI_February2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with SSI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "March 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in March over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_SSI_March2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with SSI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "April 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in April over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_SSI_April2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with SSI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "May 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in May over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_SSI_May2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with SSI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "June 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in June over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_SSI_June2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with SSI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "July 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in July over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_SSI_July2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with SSI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "August 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in August over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_SSI_August2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with SSI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "September 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in September over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_SSI_September2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with SSI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "October 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in October over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_SSI_October2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with SSI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "November 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in November over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_SSI_November2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with SSI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "December 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in December over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_SSI_December2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with SSI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "January 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in January over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_DNI_January2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with DNI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "February 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in February over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_DNI_February2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with DNI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "March 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in March over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_DNI_March2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with DNI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "April 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in April over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_DNI_April2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with DNI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "May 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in May over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_DNI_May2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with DNI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "June 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in June over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_DNI_June2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with DNI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "July 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in July over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_DNI_July2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with DNI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "August 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in August over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_DNI_August2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with DNI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "September 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in September over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_DNI_September2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with DNI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "October 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in October over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_DNI_October2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with DNI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "November 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in November over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_DNI_November2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with DNI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "December 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in December over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/LST_analysis_with_DNI_December2024.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with DNI - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/HollyhurstFarm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Max/Min daily Land Surface Temperature (LST)",
+      "isActive": false,
+      "meta": {
+        "description": "Max/Min daily LST with their corresponding time targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England. ",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/Max_Min_daily_Land_Surface_Temperature(LST).csv"
+          }
+        },
+        "interfaceGroup": "Max/Min daily LST - Hollyhurst Farm"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/Hollyhurst_Farm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
