@@ -3,34 +3,2477 @@
   "layout": {
     "navigation": {
       "logo": "https://www.esa.int/extension/pillars/design/pillars/images/ESA_Logo.svg",
-      "title": "EO Best Practices - Transport"
+      "title": "EOBPs - Road and Rail (Railway)"
     }
   },
-  "interfaceGroups": [],
-  "exclusivitySets": [
-    "labels"
+  "interfaceGroups": [
+    "Flood Exposure: Return Periods",
+    "Flood Hazard Map - Italy",
+    "Flood Hazard Map - Po Basin, Italy",
+    "Extreme Rainfall Risk - Percentile",
+    "Extreme Rainfall Risk - Return Periods",
+    "Ground Movement Risk - Sicily",
+    "Ground Movement Risk - Parts in Sicily"
   ],
-  "services": [],
+  "exclusivitySets": [],
   "sources": [
     {
-      "name": "Open StreetMap",
+      "name": "\u00a9 OpenStreetMap contributors \u00a9 CARTO",
       "isActive": true,
+      "layout": {
+        "interfaceGroup": "Basemaps"
+      },
+      "meta": {
+        "description": "Open Street Map base layer",
+        "attribution": {
+          "text": "\u00a9 OpenStreetMap contributors",
+          "url": "https://www.openstreetmap.org/copyright"
+        }
+      },
       "data": [
         {
           "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
           "format": "xyz",
-          "zIndex": 1
+          "zIndex": 0
         }
       ],
-      "isBaseLayer": true,
+      "isBaseLayer": true
+    },
+    {
+      "name": "Flood Exposure - 10 Years Return Period",
+      "isActive": false,
       "meta": {
-        "description": "",
+        "description": "The layer shows the risk category within a 100m buffer along the railway lines, based on flood depth (m) expected for a 10-year return period, meaning there is a 10% chance of exceeding a predefined flood level in any given year. The analysis is based on hydrological and hydrodynamic models from JRC.",
         "attribution": {
-          "text": "OpenStreetMap",
-          "url": "https://www.openstreetmap.org/copyright"
+          "text": "River Flood Hazard Maps at European and Global Scale ",
+          "url": "https://data.jrc.ec.europa.eu/collection/id-0054"
         },
-        "categories": []
-      }
+        "categories": [
+          {
+            "color": "rgba(255,255,178,1.0)",
+            "label": "No Risk"
+          },
+          {
+            "color": "rgba(254,221,121,1.0)",
+            "label": "Very Low Risk"
+          },
+          {
+            "color": "rgba(254,183,81,1.0)",
+            "label": "Low Risk"
+          },
+          {
+            "color": "rgba(253,141,60,1.0)",
+            "label": "Medium Risk"
+          },
+          {
+            "color": "rgba(244,86,41,1.0)",
+            "label": "High Risk"
+          },
+          {
+            "color": "rgba(223,39,34,1.0)",
+            "label": "Very High Risk"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Exposure_10_Years_Return_Period.geojson"
+          }
+        },
+        "interfaceGroup": "Flood Exposure: Return Periods"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Exposure_10_Years_Return_Period.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Flood_Clas"
+                ],
+                0,
+                "rgba(255,255,178,1.0)",
+                1,
+                "rgba(254,221,121,1.0)",
+                2,
+                "rgba(254,183,81,1.0)",
+                3,
+                "rgba(253,141,60,1.0)",
+                4,
+                "rgba(244,86,41,1.0)",
+                5,
+                "rgba(223,39,34,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Flood Exposure - 50 Years Return Period",
+      "isActive": false,
+      "meta": {
+        "description": "The layer shows the risk category  within a 100m buffer along the railway lines, based on flood depth (m) expected for a 50-year return period, meaning there is a 2% chance of exceeding a predefined flood level in any given year. The analysis is based on hydrological and hydrodynamic models from JRC.",
+        "attribution": {
+          "text": "River Flood Hazard Maps at European and Global Scale ",
+          "url": "https://data.jrc.ec.europa.eu/collection/id-0054"
+        },
+        "categories": [
+          {
+            "color": "rgba(255,255,178,1.0)",
+            "label": "No Risk"
+          },
+          {
+            "color": "rgba(254,221,121,1.0)",
+            "label": "Very Low Risk"
+          },
+          {
+            "color": "rgba(254,183,81,1.0)",
+            "label": "Low Risk"
+          },
+          {
+            "color": "rgba(253,141,60,1.0)",
+            "label": "Medium Risk"
+          },
+          {
+            "color": "rgba(244,86,41,1.0)",
+            "label": "High Risk"
+          },
+          {
+            "color": "rgba(223,39,34,1.0)",
+            "label": "Very High Risk"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Exposure_50_Years_Return_Period.geojson"
+          }
+        },
+        "interfaceGroup": "Flood Exposure: Return Periods"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Exposure_50_Years_Return_Period.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Flood_Clas"
+                ],
+                0,
+                "rgba(255,255,178,1.0)",
+                1,
+                "rgba(254,221,121,1.0)",
+                2,
+                "rgba(254,183,81,1.0)",
+                3,
+                "rgba(253,141,60,1.0)",
+                4,
+                "rgba(244,86,41,1.0)",
+                5,
+                "rgba(223,39,34,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Flood Exposure - 100 Years Return Period",
+      "isActive": false,
+      "meta": {
+        "description": "The layer shows the risk category  within a 100m buffer along the railway lines, based on flood depth (m) expected for a 100-year return period, meaning there is a 1% chance of exceeding that flood level in any given year. The analysis is based on hydrological and hydrodynamic models from JRC.",
+        "attribution": {
+          "text": "River Flood Hazard Maps at European and Global Scale ",
+          "url": "https://data.jrc.ec.europa.eu/collection/id-0054"
+        },
+        "categories": [
+          {
+            "color": "rgba(255,255,178,1.0)",
+            "label": "No Risk"
+          },
+          {
+            "color": "rgba(254,221,121,1.0)",
+            "label": "Very Low Risk"
+          },
+          {
+            "color": "rgba(254,183,81,1.0)",
+            "label": "Low Risk"
+          },
+          {
+            "color": "rgba(253,141,60,1.0)",
+            "label": "Medium Risk"
+          },
+          {
+            "color": "rgba(244,86,41,1.0)",
+            "label": "High Risk"
+          },
+          {
+            "color": "rgba(223,39,34,1.0)",
+            "label": "Very High Risk"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Exposure_100_Years_Return_Period.geojson"
+          }
+        },
+        "interfaceGroup": "Flood Exposure: Return Periods"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Exposure_100_Years_Return_Period.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Flood_Clas"
+                ],
+                0,
+                "rgba(255,255,178,1.0)",
+                1,
+                "rgba(254,221,121,1.0)",
+                2,
+                "rgba(254,183,81,1.0)",
+                3,
+                "rgba(253,141,60,1.0)",
+                4,
+                "rgba(244,86,41,1.0)",
+                5,
+                "rgba(223,39,34,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Flood Exposure - 500 Years Return Period",
+      "isActive": false,
+      "meta": {
+        "description": "The layer shows the risk category  within a 100m buffer along the railway lines, based on flood depth (m) expected for a 500-year return period, meaning there is a 0.2% chance of exceeding a predefined flood level in any given year. The analysis is based on hydrological and hydrodynamic models from JRC.",
+        "attribution": {
+          "text": "River Flood Hazard Maps at European and Global Scale ",
+          "url": "https://data.jrc.ec.europa.eu/collection/id-0054"
+        },
+        "categories": [
+          {
+            "color": "rgba(255,255,178,1.0)",
+            "label": "No Risk"
+          },
+          {
+            "color": "rgba(254,221,121,1.0)",
+            "label": "Very Low Risk"
+          },
+          {
+            "color": "rgba(254,183,81,1.0)",
+            "label": "Low Risk"
+          },
+          {
+            "color": "rgba(253,141,60,1.0)",
+            "label": "Medium Risk"
+          },
+          {
+            "color": "rgba(244,86,41,1.0)",
+            "label": "High Risk"
+          },
+          {
+            "color": "rgba(223,39,34,1.0)",
+            "label": "Very High Risk"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Exposure_500_Years_Return_Period.geojson"
+          }
+        },
+        "interfaceGroup": "Flood Exposure: Return Periods"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Exposure_500_Years_Return_Period.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Flood_Clas"
+                ],
+                0,
+                "rgba(255,255,178,1.0)",
+                1,
+                "rgba(254,221,121,1.0)",
+                2,
+                "rgba(254,183,81,1.0)",
+                3,
+                "rgba(253,141,60,1.0)",
+                4,
+                "rgba(244,86,41,1.0)",
+                5,
+                "rgba(223,39,34,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Land Use Land Cover Map",
+      "isActive": false,
+      "meta": {
+        "description": "Land Cover inventory for 44 thematic classes for the 2018 reference year.",
+        "attribution": {
+          "text": "CORINE",
+          "url": "https://land.copernicus.eu/en/products/corine-land-cover/clc2018"
+        },
+        "categories": [
+          {
+            "color": "#E6004D",
+            "label": "111 - Continuous urban fabric",
+            "value": 1
+          },
+          {
+            "color": "#FF0000",
+            "label": "112 - Discontinuous urban fabric",
+            "value": 2
+          },
+          {
+            "color": "#CC4DF2",
+            "label": "121 - Industrial or commercial units",
+            "value": 3
+          },
+          {
+            "color": "#CC0000",
+            "label": "122 - Road and rail networks and associated land",
+            "value": 4
+          },
+          {
+            "color": "#E6CCCC",
+            "label": "123 - Port areas",
+            "value": 5
+          },
+          {
+            "color": "#E6CCE6",
+            "label": "124 - Airports",
+            "value": 6
+          },
+          {
+            "color": "#A600CC",
+            "label": "131 - Mineral extraction sites",
+            "value": 7
+          },
+          {
+            "color": "#A64D00",
+            "label": "132 - Dump sites",
+            "value": 8
+          },
+          {
+            "color": "#FF4DFF",
+            "label": "133 - Construction sites",
+            "value": 9
+          },
+          {
+            "color": "#FFA6FF",
+            "label": "141 - Green urban areas",
+            "value": 10
+          },
+          {
+            "color": "#FFE6FF",
+            "label": "142 - Sport and leisure facilities",
+            "value": 11
+          },
+          {
+            "color": "#FFFFA8",
+            "label": "211 - Non-irrigated arable land",
+            "value": 12
+          },
+          {
+            "color": "#FFFF00",
+            "label": "212 - Permanently irrigated land",
+            "value": 13
+          },
+          {
+            "color": "#E6E600",
+            "label": "213 - Rice fields",
+            "value": 14
+          },
+          {
+            "color": "#E68000",
+            "label": "221 - Vineyards",
+            "value": 15
+          },
+          {
+            "color": "#F2A64D",
+            "label": "222 - Fruit trees and berry plantations",
+            "value": 16
+          },
+          {
+            "color": "#E6A600",
+            "label": "223 - Olive groves",
+            "value": 17
+          },
+          {
+            "color": "#E6E64D",
+            "label": "231 - Pastures",
+            "value": 18
+          },
+          {
+            "color": "#FFE6A6",
+            "label": "241 - Annual crops associated with permanent crops",
+            "value": 19
+          },
+          {
+            "color": "#FFE64D",
+            "label": "242 - Complex cultivation patterns",
+            "value": 20
+          },
+          {
+            "color": "#E6CC4D",
+            "label": "243 - Land principally occupied by agriculture with significant areas of natural vegetation",
+            "value": 21
+          },
+          {
+            "color": "#F2CCA6",
+            "label": "244 - Agro-forestry areas",
+            "value": 22
+          },
+          {
+            "color": "#80FF00",
+            "label": "311 - Broad-leaved forest",
+            "value": 23
+          },
+          {
+            "color": "#00A600",
+            "label": "312 - Coniferous forest",
+            "value": 24
+          },
+          {
+            "color": "#4DFF00",
+            "label": "313 - Mixed forest",
+            "value": 25
+          },
+          {
+            "color": "#CCF24D",
+            "label": "321 - Natural grasslands",
+            "value": 26
+          },
+          {
+            "color": "#A6FF80",
+            "label": "322 - Moors and heathland",
+            "value": 27
+          },
+          {
+            "color": "#A6E64D",
+            "label": "323 - Sclerophyllous vegetation",
+            "value": 28
+          },
+          {
+            "color": "#A6F200",
+            "label": "324 - Transitional woodland-shrub",
+            "value": 29
+          },
+          {
+            "color": "#E6E6E6",
+            "label": "331 - Beaches - dunes - sands",
+            "value": 30
+          },
+          {
+            "color": "#CCCCCC",
+            "label": "332 - Bare rocks",
+            "value": 31
+          },
+          {
+            "color": "#CCFFCC",
+            "label": "333 - Sparsely vegetated areas",
+            "value": 32
+          },
+          {
+            "color": "#000000",
+            "label": "334 - Burnt areas",
+            "value": 33
+          },
+          {
+            "color": "#A6E6CC",
+            "label": "335 - Glaciers and perpetual snow",
+            "value": 34
+          },
+          {
+            "color": "#A6A6FF",
+            "label": "411 - Inland marshes",
+            "value": 35
+          },
+          {
+            "color": "#4D4DFF",
+            "label": "412 - Peat bogs",
+            "value": 36
+          },
+          {
+            "color": "#CCCCFF",
+            "label": "421 - Salt marshes",
+            "value": 37
+          },
+          {
+            "color": "#E6E6FF",
+            "label": "422 - Salines",
+            "value": 38
+          },
+          {
+            "color": "#A6A6E6",
+            "label": "423 - Intertidal flats",
+            "value": 39
+          },
+          {
+            "color": "#00CCF2",
+            "label": "511 - Water courses",
+            "value": 40
+          },
+          {
+            "color": "#80F2E6",
+            "label": "512 - Water bodies",
+            "value": 41
+          },
+          {
+            "color": "#00FFA6",
+            "label": "521 - Coastal lagoons",
+            "value": 42
+          },
+          {
+            "color": "#A6FFE6",
+            "label": "522 - Estuaries",
+            "value": 43
+          },
+          {
+            "color": "#E6F2FF",
+            "label": "523 - Sea and ocean",
+            "value": 44
+          },
+          {
+            "color": "#FFFFFF",
+            "label": "999 - NODATA",
+            "value": 48
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true
+          }
+        },
+        "interfaceGroup": "Flood Exposure: Return Periods"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Corine_LULC_Italy.tif",
+          "zIndex": 1,
+          "format": "cog"
+        }
+      ]
+    },
+    {
+      "name": "Flood Hazard Map - VIRIS",
+      "isActive": false,
+      "meta": {
+        "description": "The layer shows the flood risk category within a 100m buffer along the railway lines, determined by the frequency (%) of the intersecting pixels detected as flooded across all 5-day composite VIIRS images from Jan 2012 to Dec 2024, reflecting how often those pixels appeared flooded compared to the total number of images.",
+        "attribution": {
+          "text": "NOAA Satellite Proving Ground Global Flood Products Archive",
+          "url": "https://jpssflood.gmu.edu/ "
+        },
+        "categories": [
+          {
+            "color": "rgba(255,255,178,1.0)",
+            "label": "No Risk"
+          },
+          {
+            "color": "rgba(254,183,81,1.0)",
+            "label": "Low Risk"
+          },
+          {
+            "color": "rgba(244,86,41,1.0)",
+            "label": "Medium Risk"
+          },
+          {
+            "color": "rgba(189,0,38,1.0)",
+            "label": "High Risk"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Hazard_Map_VIRIS.geojson"
+          }
+        },
+        "interfaceGroup": "Flood Hazard Map - Italy"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Hazard_Map_VIRIS.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "FreqClas"
+                ],
+                0,
+                "rgba(255,255,178,1.0)",
+                1,
+                "rgba(254,183,81,1.0)",
+                2,
+                "rgba(244,86,41,1.0)",
+                3,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Land Use Land Cover Map",
+      "isActive": false,
+      "meta": {
+        "description": "Land Cover inventory for 44 thematic classes for the 2018 reference year.",
+        "attribution": {
+          "text": "CORINE land cover",
+          "url": "https://land.copernicus.eu/en/products/corine-land-cover/clc2018"
+        },
+        "categories": [
+          {
+            "color": "#E6004D",
+            "label": "111 - Continuous urban fabric",
+            "value": 1
+          },
+          {
+            "color": "#FF0000",
+            "label": "112 - Discontinuous urban fabric",
+            "value": 2
+          },
+          {
+            "color": "#CC4DF2",
+            "label": "121 - Industrial or commercial units",
+            "value": 3
+          },
+          {
+            "color": "#CC0000",
+            "label": "122 - Road and rail networks and associated land",
+            "value": 4
+          },
+          {
+            "color": "#E6CCCC",
+            "label": "123 - Port areas",
+            "value": 5
+          },
+          {
+            "color": "#E6CCE6",
+            "label": "124 - Airports",
+            "value": 6
+          },
+          {
+            "color": "#A600CC",
+            "label": "131 - Mineral extraction sites",
+            "value": 7
+          },
+          {
+            "color": "#A64D00",
+            "label": "132 - Dump sites",
+            "value": 8
+          },
+          {
+            "color": "#FF4DFF",
+            "label": "133 - Construction sites",
+            "value": 9
+          },
+          {
+            "color": "#FFA6FF",
+            "label": "141 - Green urban areas",
+            "value": 10
+          },
+          {
+            "color": "#FFE6FF",
+            "label": "142 - Sport and leisure facilities",
+            "value": 11
+          },
+          {
+            "color": "#FFFFA8",
+            "label": "211 - Non-irrigated arable land",
+            "value": 12
+          },
+          {
+            "color": "#FFFF00",
+            "label": "212 - Permanently irrigated land",
+            "value": 13
+          },
+          {
+            "color": "#E6E600",
+            "label": "213 - Rice fields",
+            "value": 14
+          },
+          {
+            "color": "#E68000",
+            "label": "221 - Vineyards",
+            "value": 15
+          },
+          {
+            "color": "#F2A64D",
+            "label": "222 - Fruit trees and berry plantations",
+            "value": 16
+          },
+          {
+            "color": "#E6A600",
+            "label": "223 - Olive groves",
+            "value": 17
+          },
+          {
+            "color": "#E6E64D",
+            "label": "231 - Pastures",
+            "value": 18
+          },
+          {
+            "color": "#FFE6A6",
+            "label": "241 - Annual crops associated with permanent crops",
+            "value": 19
+          },
+          {
+            "color": "#FFE64D",
+            "label": "242 - Complex cultivation patterns",
+            "value": 20
+          },
+          {
+            "color": "#E6CC4D",
+            "label": "243 - Land principally occupied by agriculture with significant areas of natural vegetation",
+            "value": 21
+          },
+          {
+            "color": "#F2CCA6",
+            "label": "244 - Agro-forestry areas",
+            "value": 22
+          },
+          {
+            "color": "#80FF00",
+            "label": "311 - Broad-leaved forest",
+            "value": 23
+          },
+          {
+            "color": "#00A600",
+            "label": "312 - Coniferous forest",
+            "value": 24
+          },
+          {
+            "color": "#4DFF00",
+            "label": "313 - Mixed forest",
+            "value": 25
+          },
+          {
+            "color": "#CCF24D",
+            "label": "321 - Natural grasslands",
+            "value": 26
+          },
+          {
+            "color": "#A6FF80",
+            "label": "322 - Moors and heathland",
+            "value": 27
+          },
+          {
+            "color": "#A6E64D",
+            "label": "323 - Sclerophyllous vegetation",
+            "value": 28
+          },
+          {
+            "color": "#A6F200",
+            "label": "324 - Transitional woodland-shrub",
+            "value": 29
+          },
+          {
+            "color": "#E6E6E6",
+            "label": "331 - Beaches - dunes - sands",
+            "value": 30
+          },
+          {
+            "color": "#CCCCCC",
+            "label": "332 - Bare rocks",
+            "value": 31
+          },
+          {
+            "color": "#CCFFCC",
+            "label": "333 - Sparsely vegetated areas",
+            "value": 32
+          },
+          {
+            "color": "#000000",
+            "label": "334 - Burnt areas",
+            "value": 33
+          },
+          {
+            "color": "#A6E6CC",
+            "label": "335 - Glaciers and perpetual snow",
+            "value": 34
+          },
+          {
+            "color": "#A6A6FF",
+            "label": "411 - Inland marshes",
+            "value": 35
+          },
+          {
+            "color": "#4D4DFF",
+            "label": "412 - Peat bogs",
+            "value": 36
+          },
+          {
+            "color": "#CCCCFF",
+            "label": "421 - Salt marshes",
+            "value": 37
+          },
+          {
+            "color": "#E6E6FF",
+            "label": "422 - Salines",
+            "value": 38
+          },
+          {
+            "color": "#A6A6E6",
+            "label": "423 - Intertidal flats",
+            "value": 39
+          },
+          {
+            "color": "#00CCF2",
+            "label": "511 - Water courses",
+            "value": 40
+          },
+          {
+            "color": "#80F2E6",
+            "label": "512 - Water bodies",
+            "value": 41
+          },
+          {
+            "color": "#00FFA6",
+            "label": "521 - Coastal lagoons",
+            "value": 42
+          },
+          {
+            "color": "#A6FFE6",
+            "label": "522 - Estuaries",
+            "value": 43
+          },
+          {
+            "color": "#E6F2FF",
+            "label": "523 - Sea and ocean",
+            "value": 44
+          },
+          {
+            "color": "#FFFFFF",
+            "label": "999 - NODATA",
+            "value": 48
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true
+          }
+        },
+        "interfaceGroup": "Flood Hazard Map - Italy"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Corine_LULC_Italy.tif",
+          "zIndex": 1,
+          "format": "cog"
+        }
+      ]
+    },
+    {
+      "name": "Flood Hazard Map - VIRIS & Sentinel-1",
+      "isActive": false,
+      "meta": {
+        "description": "The layer shows the flood risk category within a 100m buffer along the railway lines, determined by the frequency (%) of the intersecting pixels detected as flooded across all 5-day composite VIIRS images from Jan 2012 to Dec 2024 and Sentinel-1 imagery, reflecting how often those pixels appeared flooded compared to the total number of images.",
+        "attribution": {
+          "text": "NOAA Satellite Proving Ground Global Flood Products Archive & Copernicus Sentinel-1",
+          "url": "https://sentiwiki.copernicus.eu/web/sentinel-1"
+        },
+        "categories": [
+          {
+            "color": "rgba(255,255,178,1.0)",
+            "label": "No Risk"
+          },
+          {
+            "color": "rgba(254,183,81,1.0)",
+            "label": "Low Risk"
+          },
+          {
+            "color": "rgba(244,86,41,1.0)",
+            "label": "Medium Risk"
+          },
+          {
+            "color": "rgba(189,0,38,1.0)",
+            "label": "High Risk"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Hazard_Map_VIRIS&Sentinel-1.geojson"
+          }
+        },
+        "interfaceGroup": "Flood Hazard Map - Po Basin, Italy"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Hazard_Map_VIRIS&Sentinel-1.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "FreqClas"
+                ],
+                0,
+                "rgba(255,255,178,1.0)",
+                1,
+                "rgba(254,183,81,1.0)",
+                2,
+                "rgba(244,86,41,1.0)",
+                3,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Land Use Land Cover Map",
+      "isActive": false,
+      "meta": {
+        "description": "Land Cover inventory for 44 thematic classes for the 2018 reference year.",
+        "attribution": {
+          "text": "CORINE land cover",
+          "url": "https://land.copernicus.eu/en/products/corine-land-cover/clc2018"
+        },
+        "categories": [
+          {
+            "color": "#E6004D",
+            "label": "111 - Continuous urban fabric",
+            "value": 1
+          },
+          {
+            "color": "#FF0000",
+            "label": "112 - Discontinuous urban fabric",
+            "value": 2
+          },
+          {
+            "color": "#CC4DF2",
+            "label": "121 - Industrial or commercial units",
+            "value": 3
+          },
+          {
+            "color": "#CC0000",
+            "label": "122 - Road and rail networks and associated land",
+            "value": 4
+          },
+          {
+            "color": "#E6CCCC",
+            "label": "123 - Port areas",
+            "value": 5
+          },
+          {
+            "color": "#E6CCE6",
+            "label": "124 - Airports",
+            "value": 6
+          },
+          {
+            "color": "#A600CC",
+            "label": "131 - Mineral extraction sites",
+            "value": 7
+          },
+          {
+            "color": "#A64D00",
+            "label": "132 - Dump sites",
+            "value": 8
+          },
+          {
+            "color": "#FF4DFF",
+            "label": "133 - Construction sites",
+            "value": 9
+          },
+          {
+            "color": "#FFA6FF",
+            "label": "141 - Green urban areas",
+            "value": 10
+          },
+          {
+            "color": "#FFE6FF",
+            "label": "142 - Sport and leisure facilities",
+            "value": 11
+          },
+          {
+            "color": "#FFFFA8",
+            "label": "211 - Non-irrigated arable land",
+            "value": 12
+          },
+          {
+            "color": "#FFFF00",
+            "label": "212 - Permanently irrigated land",
+            "value": 13
+          },
+          {
+            "color": "#E6E600",
+            "label": "213 - Rice fields",
+            "value": 14
+          },
+          {
+            "color": "#E68000",
+            "label": "221 - Vineyards",
+            "value": 15
+          },
+          {
+            "color": "#F2A64D",
+            "label": "222 - Fruit trees and berry plantations",
+            "value": 16
+          },
+          {
+            "color": "#E6A600",
+            "label": "223 - Olive groves",
+            "value": 17
+          },
+          {
+            "color": "#E6E64D",
+            "label": "231 - Pastures",
+            "value": 18
+          },
+          {
+            "color": "#FFE6A6",
+            "label": "241 - Annual crops associated with permanent crops",
+            "value": 19
+          },
+          {
+            "color": "#FFE64D",
+            "label": "242 - Complex cultivation patterns",
+            "value": 20
+          },
+          {
+            "color": "#E6CC4D",
+            "label": "243 - Land principally occupied by agriculture with significant areas of natural vegetation",
+            "value": 21
+          },
+          {
+            "color": "#F2CCA6",
+            "label": "244 - Agro-forestry areas",
+            "value": 22
+          },
+          {
+            "color": "#80FF00",
+            "label": "311 - Broad-leaved forest",
+            "value": 23
+          },
+          {
+            "color": "#00A600",
+            "label": "312 - Coniferous forest",
+            "value": 24
+          },
+          {
+            "color": "#4DFF00",
+            "label": "313 - Mixed forest",
+            "value": 25
+          },
+          {
+            "color": "#CCF24D",
+            "label": "321 - Natural grasslands",
+            "value": 26
+          },
+          {
+            "color": "#A6FF80",
+            "label": "322 - Moors and heathland",
+            "value": 27
+          },
+          {
+            "color": "#A6E64D",
+            "label": "323 - Sclerophyllous vegetation",
+            "value": 28
+          },
+          {
+            "color": "#A6F200",
+            "label": "324 - Transitional woodland-shrub",
+            "value": 29
+          },
+          {
+            "color": "#E6E6E6",
+            "label": "331 - Beaches - dunes - sands",
+            "value": 30
+          },
+          {
+            "color": "#CCCCCC",
+            "label": "332 - Bare rocks",
+            "value": 31
+          },
+          {
+            "color": "#CCFFCC",
+            "label": "333 - Sparsely vegetated areas",
+            "value": 32
+          },
+          {
+            "color": "#000000",
+            "label": "334 - Burnt areas",
+            "value": 33
+          },
+          {
+            "color": "#A6E6CC",
+            "label": "335 - Glaciers and perpetual snow",
+            "value": 34
+          },
+          {
+            "color": "#A6A6FF",
+            "label": "411 - Inland marshes",
+            "value": 35
+          },
+          {
+            "color": "#4D4DFF",
+            "label": "412 - Peat bogs",
+            "value": 36
+          },
+          {
+            "color": "#CCCCFF",
+            "label": "421 - Salt marshes",
+            "value": 37
+          },
+          {
+            "color": "#E6E6FF",
+            "label": "422 - Salines",
+            "value": 38
+          },
+          {
+            "color": "#A6A6E6",
+            "label": "423 - Intertidal flats",
+            "value": 39
+          },
+          {
+            "color": "#00CCF2",
+            "label": "511 - Water courses",
+            "value": 40
+          },
+          {
+            "color": "#80F2E6",
+            "label": "512 - Water bodies",
+            "value": 41
+          },
+          {
+            "color": "#00FFA6",
+            "label": "521 - Coastal lagoons",
+            "value": 42
+          },
+          {
+            "color": "#A6FFE6",
+            "label": "522 - Estuaries",
+            "value": 43
+          },
+          {
+            "color": "#E6F2FF",
+            "label": "523 - Sea and ocean",
+            "value": 44
+          },
+          {
+            "color": "#FFFFFF",
+            "label": "999 - NODATA",
+            "value": 48
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true
+          }
+        },
+        "interfaceGroup": "Flood Hazard Map - Po Basin, Italy"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Corine_LULC_Italy.tif",
+          "zIndex": 1,
+          "format": "cog"
+        }
+      ]
+    },
+    {
+      "name": "Risk of Number of precipitation days exceeding 20 mm - 90th Percentile (1950-2019)",
+      "isActive": false,
+      "meta": {
+        "description": "The layer shows the extreme rainfall risk category within a 100m buffer along the railway lines, based on the 90th percentile of the number of days per year when the daily rainfall amount exceeded 20mm using rainfall data from 1950 to 2019. In simple terms, it highlights areas at risk of experiencing frequent heavy rainfall days each year.",
+        "attribution": {
+          "text": "Extreme precipitation risk indicators for Europe and European cities from 1950 to 2019. This dataset was produced on behalf of the Copernicus Climate Change Service.",
+          "url": "https://cds.climate.copernicus.eu/datasets/sis-european-risk-extreme-precipitation-indicators?tab=overview"
+        },
+        "categories": [
+          {
+            "color": "rgba(255,255,178,1.0)",
+            "label": "Low Risk"
+          },
+          {
+            "color": "rgba(254,183,81,1.0)",
+            "label": "Medium Risk"
+          },
+          {
+            "color": "rgba(244,86,41,1.0)",
+            "label": "High Risk"
+          },
+          {
+            "color": "rgba(189,0,38,1.0)",
+            "label": "Very High Risk"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Number_of_precipitation_days_exceeding_20mm _90thPercentile(1950-2019).geojson"
+          }
+        },
+        "interfaceGroup": "Extreme Rainfall Risk - Percentile"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Number_of_precipitation_days_exceeding_20mm _90thPercentile(1950-2019).geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Class"
+                ],
+                1,
+                "rgba(255,255,178,1.0)",
+                2,
+                "rgba(254,183,81,1.0)",
+                3,
+                "rgba(244,86,41,1.0)",
+                4,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Risk of Number of precipitation days exceeding 20 mm - 95th Percentile (1950-2019)",
+      "isActive": false,
+      "meta": {
+        "description": "The layer shows the extreme rainfall risk category within a 100m buffer along the railway lines, based on the 95th percentile of the number of days per year when the daily rainfall amount exceeded 20mm using rainfall data from 1950 to 2019. In simple terms, it highlights areas at risk of experiencing frequent heavy rainfall days each year.",
+        "attribution": {
+          "text": "Extreme precipitation risk indicators for Europe and European cities from 1950 to 2019. This dataset was produced on behalf of the Copernicus Climate Change Service.",
+          "url": "https://cds.climate.copernicus.eu/datasets/sis-european-risk-extreme-precipitation-indicators?tab=overview"
+        },
+        "categories": [
+          {
+            "color": "rgba(255,255,178,1.0)",
+            "label": "Low Risk"
+          },
+          {
+            "color": "rgba(254,183,81,1.0)",
+            "label": "Medium Risk"
+          },
+          {
+            "color": "rgba(244,86,41,1.0)",
+            "label": "High Risk"
+          },
+          {
+            "color": "rgba(189,0,38,1.0)",
+            "label": "Very High Risk"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Number_of_precipitation_days_exceeding_20mm _95thPercentile(1950-2019).geojson"
+          }
+        },
+        "interfaceGroup": "Extreme Rainfall Risk - Percentile"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Number_of_precipitation_days_exceeding_20mm _95thPercentile(1950-2019).geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Class"
+                ],
+                1,
+                "rgba(255,255,178,1.0)",
+                2,
+                "rgba(254,183,81,1.0)",
+                3,
+                "rgba(244,86,41,1.0)",
+                4,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Risk of Number of precipitation days exceeding 20 mm - 99th Percentile (1950-2019)",
+      "isActive": false,
+      "meta": {
+        "description": "The layer shows the extreme rainfall risk category within a 100m buffer along the railway lines, based on the 99th percentile of the number of days per year when the daily rainfall amount exceeded 20mm using rainfall data from 1950 to 2019. In simple terms, it highlights areas at risk of experiencing frequent heavy rainfall days each year.",
+        "attribution": {
+          "text": "Extreme precipitation risk indicators for Europe and European cities from 1950 to 2019. This dataset was produced on behalf of the Copernicus Climate Change Service.",
+          "url": "https://cds.climate.copernicus.eu/datasets/sis-european-risk-extreme-precipitation-indicators?tab=overview"
+        },
+        "categories": [
+          {
+            "color": "rgba(255,255,178,1.0)",
+            "label": "Low Risk"
+          },
+          {
+            "color": "rgba(254,183,81,1.0)",
+            "label": "Medium Risk"
+          },
+          {
+            "color": "rgba(244,86,41,1.0)",
+            "label": "High Risk"
+          },
+          {
+            "color": "rgba(189,0,38,1.0)",
+            "label": "Very High Risk"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Number_of_precipitation_days_exceeding_20mm _99thPercentile(1950-2019).geojson"
+          }
+        },
+        "interfaceGroup": "Extreme Rainfall Risk - Percentile"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Number_of_precipitation_days_exceeding_20mm _99thPercentile(1950-2019).geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Class"
+                ],
+                1,
+                "rgba(255,255,178,1.0)",
+                2,
+                "rgba(254,183,81,1.0)",
+                3,
+                "rgba(244,86,41,1.0)",
+                4,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Risk of Daily Precepitation - 5 Years Return Period",
+      "isActive": false,
+      "meta": {
+        "description": "The layer shows the risk category within a 100m buffer along the railway lines, based on daily rainfall amount (mm) expected for a 5-year return period, meaning there is a 20% chance of exceeding a predefined rainfall amount in any given year.",
+        "attribution": {
+          "text": "Extreme precipitation risk indicators for Europe and European cities from 1950 to 2019. This dataset was produced on behalf of the Copernicus Climate Change Service.",
+          "url": "https://cds.climate.copernicus.eu/datasets/sis-european-risk-extreme-precipitation-indicators?tab=overview"
+        },
+        "categories": [
+          {
+            "color": "rgba(255,255,178,1.0)",
+            "label": "Low Risk"
+          },
+          {
+            "color": "rgba(254,204,92,1.0)",
+            "label": "Medium Risk"
+          },
+          {
+            "color": "rgba(253,141,60,1.0)",
+            "label": "High Risk"
+          },
+          {
+            "color": "rgba(240,59,32,1.0)",
+            "label": "Very High Risk"
+          },
+          {
+            "color": "rgba(189,0,38,1.0)",
+            "label": "Extreme High Risk"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_5Years_Return_Period.geojson"
+          }
+        },
+        "interfaceGroup": "Extreme Rainfall Risk - Return Periods"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_5Years_Return_Period.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Class"
+                ],
+                1,
+                "rgba(255,255,178,1.0)",
+                2,
+                "rgba(254,204,92,1.0)",
+                3,
+                "rgba(253,141,60,1.0)",
+                4,
+                "rgba(240,59,32,1.0)",
+                5,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Risk of Daily Precepitation - 10 Years Return Period",
+      "isActive": false,
+      "meta": {
+        "description": "The layer shows the risk category within a 100m buffer along the railway lines, based on daily rainfall amount (mm) expected for a 10-year return period, meaning there is a 10% chance of exceeding a predefined rainfall amount in any given year.",
+        "attribution": {
+          "text": "Extreme precipitation risk indicators for Europe and European cities from 1950 to 2019. This dataset was produced on behalf of the Copernicus Climate Change Service.",
+          "url": "https://cds.climate.copernicus.eu/datasets/sis-european-risk-extreme-precipitation-indicators?tab=overview"
+        },
+        "categories": [
+          {
+            "color": "rgba(255,255,178,1.0)",
+            "label": "Low Risk"
+          },
+          {
+            "color": "rgba(254,204,92,1.0)",
+            "label": "Medium Risk"
+          },
+          {
+            "color": "rgba(253,141,60,1.0)",
+            "label": "High Risk"
+          },
+          {
+            "color": "rgba(240,59,32,1.0)",
+            "label": "Very High Risk"
+          },
+          {
+            "color": "rgba(189,0,38,1.0)",
+            "label": "Extreme High Risk"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_10Years_Return_Period.geojson"
+          }
+        },
+        "interfaceGroup": "Extreme Rainfall Risk - Return Periods"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_10Years_Return_Period.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Class"
+                ],
+                1,
+                "rgba(255,255,178,1.0)",
+                2,
+                "rgba(254,204,92,1.0)",
+                3,
+                "rgba(253,141,60,1.0)",
+                4,
+                "rgba(240,59,32,1.0)",
+                5,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Risk of Daily Precepitation - 20 Years Return Period",
+      "isActive": false,
+      "meta": {
+        "description": "The layer shows the risk category within a 100m buffer along the railway lines, based on daily rainfall amount (mm) expected for a 20-year return period, meaning there is a 5% chance of exceeding a predefined rainfall amount in any given year.",
+        "attribution": {
+          "text": "Extreme precipitation risk indicators for Europe and European cities from 1950 to 2019. This dataset was produced on behalf of the Copernicus Climate Change Service.",
+          "url": "https://cds.climate.copernicus.eu/datasets/sis-european-risk-extreme-precipitation-indicators?tab=overview"
+        },
+        "categories": [
+          {
+            "color": "rgba(255,255,178,1.0)",
+            "label": "Low Risk"
+          },
+          {
+            "color": "rgba(254,204,92,1.0)",
+            "label": "Medium Risk"
+          },
+          {
+            "color": "rgba(253,141,60,1.0)",
+            "label": "High Risk"
+          },
+          {
+            "color": "rgba(240,59,32,1.0)",
+            "label": "Very High Risk"
+          },
+          {
+            "color": "rgba(189,0,38,1.0)",
+            "label": "Extreme High Risk"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_20Years_Return_Period.geojson"
+          }
+        },
+        "interfaceGroup": "Extreme Rainfall Risk - Return Periods"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_20Years_Return_Period.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Class"
+                ],
+                1,
+                "rgba(255,255,178,1.0)",
+                2,
+                "rgba(254,204,92,1.0)",
+                3,
+                "rgba(253,141,60,1.0)",
+                4,
+                "rgba(240,59,32,1.0)",
+                5,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Risk of Daily Precepitation - 50 Years Return Period",
+      "isActive": false,
+      "meta": {
+        "description": "The layer shows the risk category within a 100m buffer along the railway lines, based on daily rainfall amount (mm) expected for a 50-year return period, meaning there is a 2% chance of exceeding a predefined rainfall amount in any given year.",
+        "attribution": {
+          "text": "Extreme precipitation risk indicators for Europe and European cities from 1950 to 2019. This dataset was produced on behalf of the Copernicus Climate Change Service.",
+          "url": "https://cds.climate.copernicus.eu/datasets/sis-european-risk-extreme-precipitation-indicators?tab=overview"
+        },
+        "categories": [
+          {
+            "color": "rgba(255,255,178,1.0)",
+            "label": "Low Risk"
+          },
+          {
+            "color": "rgba(254,204,92,1.0)",
+            "label": "Medium Risk"
+          },
+          {
+            "color": "rgba(253,141,60,1.0)",
+            "label": "High Risk"
+          },
+          {
+            "color": "rgba(240,59,32,1.0)",
+            "label": "Very High Risk"
+          },
+          {
+            "color": "rgba(189,0,38,1.0)",
+            "label": "Extreme High Risk"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_50Years_Return_Period.geojson"
+          }
+        },
+        "interfaceGroup": "Extreme Rainfall Risk - Return Periods"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_50Years_Return_Period.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Class"
+                ],
+                1,
+                "rgba(255,255,178,1.0)",
+                2,
+                "rgba(254,204,92,1.0)",
+                3,
+                "rgba(253,141,60,1.0)",
+                4,
+                "rgba(240,59,32,1.0)",
+                5,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Risk of Daily Precepitation - 100 Years Return Period",
+      "isActive": false,
+      "meta": {
+        "description": "The layer shows the risk category within a 100m buffer along the railway lines, based on daily rainfall amount (mm) expected for a 100-year return period, meaning there is a 1% chance of exceeding a predefined rainfall amount in any given year.",
+        "attribution": {
+          "text": "Extreme precipitation risk indicators for Europe and European cities from 1950 to 2019. This dataset was produced on behalf of the Copernicus Climate Change Service.",
+          "url": "https://cds.climate.copernicus.eu/datasets/sis-european-risk-extreme-precipitation-indicators?tab=overview"
+        },
+        "categories": [
+          {
+            "color": "rgba(255,255,178,1.0)",
+            "label": "Low Risk"
+          },
+          {
+            "color": "rgba(254,204,92,1.0)",
+            "label": "Medium Risk"
+          },
+          {
+            "color": "rgba(253,141,60,1.0)",
+            "label": "High Risk"
+          },
+          {
+            "color": "rgba(240,59,32,1.0)",
+            "label": "Very High Risk"
+          },
+          {
+            "color": "rgba(189,0,38,1.0)",
+            "label": "Extreme High Risk"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_100Years_Return_Period.geojson"
+          }
+        },
+        "interfaceGroup": "Extreme Rainfall Risk - Return Periods"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_100Years_Return_Period.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Class"
+                ],
+                1,
+                "rgba(255,255,178,1.0)",
+                2,
+                "rgba(254,204,92,1.0)",
+                3,
+                "rgba(253,141,60,1.0)",
+                4,
+                "rgba(240,59,32,1.0)",
+                5,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Land Subsidence Risk Map - Sicily",
+      "isActive": false,
+      "meta": {
+        "description": "The layer represents land subsidence risk categories in areas with slopes less than 10% across the railway lines in Sicily, Italy. The analysis is based on ground motion velocity data provided by the European Ground Motion Service (EGMS).",
+        "attribution": {
+          "text": "EGMS",
+          "url": "https://land.copernicus.eu/en/products/european-ground-motion-service"
+        },
+        "categories": [
+          {
+            "color": "rgba(215,25,28,1.0)",
+            "label": "High risk"
+          },
+          {
+            "color": "rgba(253,174,97,1.0)",
+            "label": "Medium risk"
+          },
+          {
+            "color": "rgba(171,221,164,1.0)",
+            "label": "Stable"
+          },
+          {
+            "color": "rgba(254,254,254,1.0)",
+            "label": "No data"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Land_Subsidence_Risk_Map_Sicily.geojson"
+          }
+        },
+        "interfaceGroup": "Ground Movement Risk - Sicily"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Land_Subsidence_Risk_Map_Sicily.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "RiskCat"
+                ],
+                "High risk",
+                "rgba(215,25,28,1.0)",
+                "Medium risk",
+                "rgba(253,174,97,1.0)",
+                "Stable",
+                "rgba(171,221,164,1.0)",
+                "No risk",
+                "rgba(254,254,254,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Landslides Risk Map - Sicily",
+      "isActive": false,
+      "meta": {
+        "description": "The layer represents landslides risk categories in areas with slopes more than 10% across the railway lines in Sicily, Italy. The analysis is based on ground motion velocity data provided by the European Ground Motion Service (EGMS).",
+        "attribution": {
+          "text": "EGMS",
+          "url": "https://land.copernicus.eu/en/products/european-ground-motion-service"
+        },
+        "categories": [
+          {
+            "color": "rgba(215,25,28,1.0)",
+            "label": "High risk"
+          },
+          {
+            "color": "rgba(253,174,97,1.0)",
+            "label": "Medium risk"
+          },
+          {
+            "color": "rgba(171,221,164,1.0)",
+            "label": "Stable"
+          },
+          {
+            "color": "rgba(254,254,254,1.0)",
+            "label": "No data"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Landslides_Risk_Map_Sicily.geojson"
+          }
+        },
+        "interfaceGroup": "Ground Movement Risk - Sicily"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Landslides_Risk_Map_Sicily.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "RiskCat"
+                ],
+                "High risk",
+                "rgba(215,25,28,1.0)",
+                "Medium risk",
+                "rgba(253,174,97,1.0)",
+                "Stable",
+                "rgba(171,221,164,1.0)",
+                "No risk",
+                "rgba(254,254,254,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Land Subsidence Risk Map - Sicily (Small Region 1)",
+      "isActive": false,
+      "meta": {
+        "description": "The layer represents land subsidence risk categories in areas with slopes less than 10% across the railway lines of small region (Region-1) in Sicily, Italy. The analysis is based on ground velocity and displacement time series derived from InSAR processing of six years of Sentinel-1 data specifically over this area.",
+        "attribution": {
+          "text": "Copernicus Sentinel-1",
+          "url": "https://sentiwiki.copernicus.eu/web/sentinel-1"
+        },
+        "categories": [
+          {
+            "color": "rgba(215,25,28,1.0)",
+            "label": "High risk"
+          },
+          {
+            "color": "rgba(253,174,97,1.0)",
+            "label": "Medium risk"
+          },
+          {
+            "color": "rgba(171,221,164,1.0)",
+            "label": "Stable"
+          },
+          {
+            "color": "rgba(254,254,254,1.0)",
+            "label": "No data"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Land_Subsidence_Risk_Map_Sicily(Small_Region1).geojson"
+          }
+        },
+        "interfaceGroup": "Ground Movement Risk - Parts in Sicily"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Land_Subsidence_Risk_Map_Sicily(Small_Region1).geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "RiskCat"
+                ],
+                "High risk",
+                "rgba(215,25,28,1.0)",
+                "Medium risk",
+                "rgba(253,174,97,1.0)",
+                "Stable",
+                "rgba(171,221,164,1.0)",
+                "No risk",
+                "rgba(254,254,254,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Landslides Risk Map - Sicily  (Small Region 1)",
+      "isActive": false,
+      "meta": {
+        "description": "The layer represents landslides risk categories in areas with slopes more than 10% across the railway lines of small region (Region-1) in Sicily, Italy. The analysis is based on ground velocity and displacement time series derived from InSAR processing of six years of Sentinel-1 data specifically over this area.",
+        "attribution": {
+          "text": "Copernicus Sentinel-1",
+          "url": "https://sentiwiki.copernicus.eu/web/sentinel-1"
+        },
+        "categories": [
+          {
+            "color": "rgba(215,25,28,1.0)",
+            "label": "High risk"
+          },
+          {
+            "color": "rgba(253,174,97,1.0)",
+            "label": "Medium risk"
+          },
+          {
+            "color": "rgba(171,221,164,1.0)",
+            "label": "Stable"
+          },
+          {
+            "color": "rgba(254,254,254,1.0)",
+            "label": "No data"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Landslides_Risk_Map_Sicily(Small_Region1).geojson"
+          }
+        },
+        "interfaceGroup": "Ground Movement Risk - Parts in Sicily"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Landslides_Risk_Map_Sicily(Small_Region1).geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "RiskCat"
+                ],
+                "High risk",
+                "rgba(215,25,28,1.0)",
+                "Medium risk",
+                "rgba(253,174,97,1.0)",
+                "Stable",
+                "rgba(171,221,164,1.0)",
+                "No risk",
+                "rgba(254,254,254,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Land Subsidence Risk Map - Sicily (Small Region 2)",
+      "isActive": false,
+      "meta": {
+        "description": "The layer represents land subsidence risk categories in areas with slopes less than 10% across the railway lines of small region (Region-2) in Sicily, Italy. The analysis is based on ground velocity and displacement time series derived from InSAR processing of six years of Sentinel-1 data specifically over this area.",
+        "attribution": {
+          "text": "Copernicus Sentinel-1",
+          "url": "https://sentiwiki.copernicus.eu/web/sentinel-1"
+        },
+        "categories": [
+          {
+            "color": "rgba(215,25,28,1.0)",
+            "label": "High risk"
+          },
+          {
+            "color": "rgba(253,174,97,1.0)",
+            "label": "Medium risk"
+          },
+          {
+            "color": "rgba(171,221,164,1.0)",
+            "label": "Stable"
+          },
+          {
+            "color": "rgba(254,254,254,1.0)",
+            "label": "No data"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Land_Subsidence_Risk_Map_Sicily(Small_Region2).geojson"
+          }
+        },
+        "interfaceGroup": "Ground Movement Risk - Parts in Sicily"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Land_Subsidence_Risk_Map_Sicily(Small_Region2).geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "RiskCat"
+                ],
+                "High risk",
+                "rgba(215,25,28,1.0)",
+                "Medium risk",
+                "rgba(253,174,97,1.0)",
+                "Stable",
+                "rgba(171,221,164,1.0)",
+                "No risk",
+                "rgba(254,254,254,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Landslides Risk Map - Sicily  (Small Region 2)",
+      "isActive": false,
+      "meta": {
+        "description": "The layer represents landslides risk categories in areas with slopes less than 10% across the railway lines of small region (Region-2) in Sicily, Italy. The analysis is based on ground velocity and displacement time series derived from InSAR processing of six years of Sentinel-1 data specifically over this area.",
+        "attribution": {
+          "text": "Copernicus Sentinel-1",
+          "url": "https://sentiwiki.copernicus.eu/web/sentinel-1"
+        },
+        "categories": [
+          {
+            "color": "rgba(215,25,28,1.0)",
+            "label": "High risk"
+          },
+          {
+            "color": "rgba(253,174,97,1.0)",
+            "label": "Medium risk"
+          },
+          {
+            "color": "rgba(171,221,164,1.0)",
+            "label": "Stable"
+          },
+          {
+            "color": "rgba(254,254,254,1.0)",
+            "label": "No data"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Landslides_Risk_Map_Sicily(Small_Region2).geojson"
+          }
+        },
+        "interfaceGroup": "Ground Movement Risk - Parts in Sicily"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Landslides_Risk_Map_Sicily(Small_Region2).geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "RiskCat"
+                ],
+                "High risk",
+                "rgba(215,25,28,1.0)",
+                "Medium risk",
+                "rgba(253,174,97,1.0)",
+                "Stable",
+                "rgba(171,221,164,1.0)",
+                "No risk",
+                "rgba(254,254,254,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Land Subsidence Risk Map - Sicily (Small Region 3)",
+      "isActive": false,
+      "meta": {
+        "description": "The layer represents land subsidence risk categories in areas with slopes less than 10% across the railway lines of small region (Region-3) in Sicily, Italy. The analysis is based on ground velocity and displacement time series derived from InSAR processing of six years of Sentinel-1 data specifically over this area.",
+        "attribution": {
+          "text": "Copernicus Sentinel-1",
+          "url": "https://sentiwiki.copernicus.eu/web/sentinel-1"
+        },
+        "categories": [
+          {
+            "color": "rgba(215,25,28,1.0)",
+            "label": "High risk"
+          },
+          {
+            "color": "rgba(253,174,97,1.0)",
+            "label": "Medium risk"
+          },
+          {
+            "color": "rgba(171,221,164,1.0)",
+            "label": "Stable"
+          },
+          {
+            "color": "rgba(254,254,254,1.0)",
+            "label": "No data"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Land_Subsidence_Risk_Map_Sicily(Small_Region3).geojson"
+          }
+        },
+        "interfaceGroup": "Ground Movement Risk - Parts in Sicily"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Land_Subsidence_Risk_Map_Sicily(Small_Region3).geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "RiskCat"
+                ],
+                "High risk",
+                "rgba(215,25,28,1.0)",
+                "Medium risk",
+                "rgba(253,174,97,1.0)",
+                "Stable",
+                "rgba(171,221,164,1.0)",
+                "No risk",
+                "rgba(254,254,254,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Landslides Risk Map - Sicily  (Small Region 3)",
+      "isActive": false,
+      "meta": {
+        "description": "The layer represents landslides risk categories in areas with slopes more than 10% across the railway lines of small region (Region-3) in Sicily, Italy. The analysis is based on ground velocity and displacement time series derived from InSAR processing of six years of Sentinel-1 data specifically over this area.",
+        "attribution": {
+          "text": "Copernicus Sentinel-1",
+          "url": "https://sentiwiki.copernicus.eu/web/sentinel-1"
+        },
+        "categories": [
+          {
+            "color": "rgba(215,25,28,1.0)",
+            "label": "High risk"
+          },
+          {
+            "color": "rgba(253,174,97,1.0)",
+            "label": "Medium risk"
+          },
+          {
+            "color": "rgba(171,221,164,1.0)",
+            "label": "Stable"
+          },
+          {
+            "color": "rgba(254,254,254,1.0)",
+            "label": "No data"
+          }
+        ]
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Landslides_Risk_Map_Sicily(Small_Region3).geojson"
+          }
+        },
+        "interfaceGroup": "Ground Movement Risk - Parts in Sicily"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Landslides_Risk_Map_Sicily(Small_Region3).geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "RiskCat"
+                ],
+                "High risk",
+                "rgba(215,25,28,1.0)",
+                "Medium risk",
+                "rgba(253,174,97,1.0)",
+                "Stable",
+                "rgba(171,221,164,1.0)",
+                "No risk",
+                "rgba(254,254,254,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
