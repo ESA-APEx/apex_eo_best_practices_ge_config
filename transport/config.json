@@ -1,11 +1,13 @@
-{
-  "version": "3.0.2",
-  "layout": {
+"layout": {
     "navigation": {
       "logo": "https://www.esa.int/extension/pillars/design/pillars/images/ESA_Logo.svg",
+      "title": "EO Best Practices - Transport"
       "title": "EOBPs - Road and Rail (Railway)"
     }
   },
+  "interfaceGroups": [],
+  "exclusivitySets": [
+    "labels"
   "interfaceGroups": [
     "Flood Exposure: Return Periods",
     "Flood Hazard Map - Italy",
@@ -15,9 +17,11 @@
     "Ground Movement Risk - Sicily",
     "Ground Movement Risk - Parts in Sicily"
   ],
+  "services": [],
   "exclusivitySets": [],
   "sources": [
     {
+      "name": "Open StreetMap",
       "name": "\u00a9 OpenStreetMap contributors \u00a9 CARTO",
       "isActive": true,
       "layout": {
@@ -34,17 +38,22 @@
         {
           "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
           "format": "xyz",
+          "zIndex": 1
           "zIndex": 0
         }
       ],
+      "isBaseLayer": true,
       "isBaseLayer": true
     },
     {
       "name": "Flood Exposure - 10 Years Return Period",
       "isActive": false,
       "meta": {
+        "description": "",
         "description": "The layer shows the risk category within a 100m buffer along the railway lines, based on flood depth (m) expected for a 10-year return period, meaning there is a 10% chance of exceeding a predefined flood level in any given year. The analysis is based on hydrological and hydrodynamic models from JRC.",
         "attribution": {
+          "text": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/copyright"
           "text": "River Flood Hazard Maps at European and Global Scale ",
           "url": "https://data.jrc.ec.europa.eu/collection/id-0054"
         },
@@ -91,9 +100,35 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Flood_Exposure_10_Years_Return_Period.tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Exposure_10_Years_Return_Period.geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Flood_Clas"
+                ],
+                0,
+                "rgba(255,255,178,1.0)",
+                1,
+                "rgba(254,221,121,1.0)",
+                2,
+                "rgba(254,183,81,1.0)",
+                3,
+                "rgba(253,141,60,1.0)",
+                4,
+                "rgba(244,86,41,1.0)",
+                5,
+                "rgba(223,39,34,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -149,9 +184,35 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Flood_Exposure_50_Years_Return_Period.tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Exposure_50_Years_Return_Period.geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Flood_Clas"
+                ],
+                0,
+                "rgba(255,255,178,1.0)",
+                1,
+                "rgba(254,221,121,1.0)",
+                2,
+                "rgba(254,183,81,1.0)",
+                3,
+                "rgba(253,141,60,1.0)",
+                4,
+                "rgba(244,86,41,1.0)",
+                5,
+                "rgba(223,39,34,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -207,9 +268,35 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Flood_Exposure_100_Years_Return_Period.tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Exposure_100_Years_Return_Period.geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Flood_Clas"
+                ],
+                0,
+                "rgba(255,255,178,1.0)",
+                1,
+                "rgba(254,221,121,1.0)",
+                2,
+                "rgba(254,183,81,1.0)",
+                3,
+                "rgba(253,141,60,1.0)",
+                4,
+                "rgba(244,86,41,1.0)",
+                5,
+                "rgba(223,39,34,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -265,9 +352,35 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Flood_Exposure_500_Years_Return_Period.tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Exposure_500_Years_Return_Period.geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Flood_Clas"
+                ],
+                0,
+                "rgba(255,255,178,1.0)",
+                1,
+                "rgba(254,221,121,1.0)",
+                2,
+                "rgba(254,183,81,1.0)",
+                3,
+                "rgba(253,141,60,1.0)",
+                4,
+                "rgba(244,86,41,1.0)",
+                5,
+                "rgba(223,39,34,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -573,9 +686,31 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Flood_Hazard_Map_VIRIS.tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Hazard_Map_VIRIS.geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "FreqClas"
+                ],
+                0,
+                "rgba(255,255,178,1.0)",
+                1,
+                "rgba(254,183,81,1.0)",
+                2,
+                "rgba(244,86,41,1.0)",
+                3,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -881,9 +1016,31 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Flood_Hazard_Map_VIRIS%26Sentinel-1.tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Hazard_Map_VIRIS&Sentinel-1.geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "FreqClas"
+                ],
+                0,
+                "rgba(255,255,178,1.0)",
+                1,
+                "rgba(254,183,81,1.0)",
+                2,
+                "rgba(244,86,41,1.0)",
+                3,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -1189,9 +1346,31 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Risk_of_Number_of_precipitation_days_exceeding_20mm%20_90thPercentile(1950-2019).tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Number_of_precipitation_days_exceeding_20mm _90thPercentile(1950-2019).geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Class"
+                ],
+                1,
+                "rgba(255,255,178,1.0)",
+                2,
+                "rgba(254,183,81,1.0)",
+                3,
+                "rgba(244,86,41,1.0)",
+                4,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -1239,9 +1418,31 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Risk_of_Number_of_precipitation_days_exceeding_20mm%20_95thPercentile(1950-2019).tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Number_of_precipitation_days_exceeding_20mm _95thPercentile(1950-2019).geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Class"
+                ],
+                1,
+                "rgba(255,255,178,1.0)",
+                2,
+                "rgba(254,183,81,1.0)",
+                3,
+                "rgba(244,86,41,1.0)",
+                4,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -1289,9 +1490,31 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Risk_of_Number_of_precipitation_days_exceeding_20mm%20_99thPercentile(1950-2019).tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Number_of_precipitation_days_exceeding_20mm _99thPercentile(1950-2019).geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Class"
+                ],
+                1,
+                "rgba(255,255,178,1.0)",
+                2,
+                "rgba(254,183,81,1.0)",
+                3,
+                "rgba(244,86,41,1.0)",
+                4,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -1343,9 +1566,33 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Risk_of_Daily_Precepitation_5Years_Return_Period.tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_5Years_Return_Period.geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Class"
+                ],
+                1,
+                "rgba(255,255,178,1.0)",
+                2,
+                "rgba(254,204,92,1.0)",
+                3,
+                "rgba(253,141,60,1.0)",
+                4,
+                "rgba(240,59,32,1.0)",
+                5,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -1397,9 +1644,33 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Risk_of_Daily_Precepitation_10Years_Return_Period.tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_10Years_Return_Period.geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Class"
+                ],
+                1,
+                "rgba(255,255,178,1.0)",
+                2,
+                "rgba(254,204,92,1.0)",
+                3,
+                "rgba(253,141,60,1.0)",
+                4,
+                "rgba(240,59,32,1.0)",
+                5,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -1451,9 +1722,33 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Risk_of_Daily_Precepitation_20Years_Return_Period.tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_20Years_Return_Period.geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Class"
+                ],
+                1,
+                "rgba(255,255,178,1.0)",
+                2,
+                "rgba(254,204,92,1.0)",
+                3,
+                "rgba(253,141,60,1.0)",
+                4,
+                "rgba(240,59,32,1.0)",
+                5,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -1501,13 +1796,39 @@
             "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_50Years_Return_Period.geojson"
           }
         },
+        "categories": []
+      }
         "interfaceGroup": "Extreme Rainfall Risk - Return Periods"
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Risk_of_Daily_Precepitation_50Years_Return_Period.tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_50Years_Return_Period.geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Class"
+                ],
+                1,
+                "rgba(255,255,178,1.0)",
+                2,
+                "rgba(254,204,92,1.0)",
+                3,
+                "rgba(253,141,60,1.0)",
+                4,
+                "rgba(240,59,32,1.0)",
+                5,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -1559,9 +1880,33 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Risk_of_Daily_Precepitation_100Years_Return_Period.tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_100Years_Return_Period.geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "Class"
+                ],
+                1,
+                "rgba(255,255,178,1.0)",
+                2,
+                "rgba(254,204,92,1.0)",
+                3,
+                "rgba(253,141,60,1.0)",
+                4,
+                "rgba(240,59,32,1.0)",
+                5,
+                "rgba(189,0,38,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -1609,9 +1954,31 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Land_Subsidence_Risk_Map_Sicily.tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Land_Subsidence_Risk_Map_Sicily.geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "RiskCat"
+                ],
+                "High risk",
+                "rgba(215,25,28,1.0)",
+                "Medium risk",
+                "rgba(253,174,97,1.0)",
+                "Stable",
+                "rgba(171,221,164,1.0)",
+                "No risk",
+                "rgba(254,254,254,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -1659,9 +2026,31 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Landslides_Risk_Map_Sicily.tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Landslides_Risk_Map_Sicily.geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "RiskCat"
+                ],
+                "High risk",
+                "rgba(215,25,28,1.0)",
+                "Medium risk",
+                "rgba(253,174,97,1.0)",
+                "Stable",
+                "rgba(171,221,164,1.0)",
+                "No risk",
+                "rgba(254,254,254,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -1709,9 +2098,31 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Land_Subsidence_Risk_Map_Sicily(Small_Region1).tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Land_Subsidence_Risk_Map_Sicily(Small_Region1).geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "RiskCat"
+                ],
+                "High risk",
+                "rgba(215,25,28,1.0)",
+                "Medium risk",
+                "rgba(253,174,97,1.0)",
+                "Stable",
+                "rgba(171,221,164,1.0)",
+                "No risk",
+                "rgba(254,254,254,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -1759,9 +2170,31 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Landslides_Risk_Map_Sicily(Small_Region1).tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Landslides_Risk_Map_Sicily(Small_Region1).geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "RiskCat"
+                ],
+                "High risk",
+                "rgba(215,25,28,1.0)",
+                "Medium risk",
+                "rgba(253,174,97,1.0)",
+                "Stable",
+                "rgba(171,221,164,1.0)",
+                "No risk",
+                "rgba(254,254,254,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -1809,9 +2242,31 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Land_Subsidence_Risk_Map_Sicily(Small_Region2).tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Land_Subsidence_Risk_Map_Sicily(Small_Region2).geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "RiskCat"
+                ],
+                "High risk",
+                "rgba(215,25,28,1.0)",
+                "Medium risk",
+                "rgba(253,174,97,1.0)",
+                "Stable",
+                "rgba(171,221,164,1.0)",
+                "No risk",
+                "rgba(254,254,254,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -1859,9 +2314,31 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Landslides_Risk_Map_Sicily(Small_Region2).tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Landslides_Risk_Map_Sicily(Small_Region2).geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "RiskCat"
+                ],
+                "High risk",
+                "rgba(215,25,28,1.0)",
+                "Medium risk",
+                "rgba(253,174,97,1.0)",
+                "Stable",
+                "rgba(171,221,164,1.0)",
+                "No risk",
+                "rgba(254,254,254,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -1909,9 +2386,31 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Land_Subsidence_Risk_Map_Sicily(Small_Region3).tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Land_Subsidence_Risk_Map_Sicily(Small_Region3).geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "RiskCat"
+                ],
+                "High risk",
+                "rgba(215,25,28,1.0)",
+                "Medium risk",
+                "rgba(253,174,97,1.0)",
+                "Stable",
+                "rgba(171,221,164,1.0)",
+                "No risk",
+                "rgba(254,254,254,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     },
@@ -1959,11 +2458,34 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/cog/Landslides_Risk_Map_Sicily(Small_Region3).tif",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Landslides_Risk_Map_Sicily(Small_Region3).geojson",
           "zIndex": 1,
-          "format": "cog"
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": [
+                "match",
+                [
+                  "get",
+                  "RiskCat"
+                ],
+                "High risk",
+                "rgba(215,25,28,1.0)",
+                "Medium risk",
+                "rgba(253,174,97,1.0)",
+                "Stable",
+                "rgba(171,221,164,1.0)",
+                "No risk",
+                "rgba(254,254,254,1.0)",
+                "rgba(200, 200, 200, 0)"
+              ],
+              "stroke-color": "rgba(35,35,35,1.0)",
+              "stroke-width": 0.5
+            }
+          ]
         }
       ]
     }
   ]
+}
 }
