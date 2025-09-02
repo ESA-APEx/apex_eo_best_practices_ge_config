@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "3.0.2",
   "layout": {
     "navigation": {
       "logo": "https://www.esa.int/extension/pillars/design/pillars/images/ESA_Logo.svg",
@@ -91,9 +91,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Exposure_10_Years_Return_Period.geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Flood_Exposure_10_Years_Return_Period.fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -175,9 +175,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Exposure_50_Years_Return_Period.geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Flood_Exposure_50_Years_Return_Period.fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -259,9 +259,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Exposure_100_Years_Return_Period.geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Flood_Exposure_100_Years_Return_Period.fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -343,9 +343,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Exposure_500_Years_Return_Period.geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Flood_Exposure_500_Years_Return_Period.fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -677,9 +677,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Hazard_Map_VIRIS.geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Flood_Hazard_Map_VIRIS.fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -1007,9 +1007,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Hazard_Map_VIRIS&Sentinel-1.geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Flood_Hazard_Map_VIRIS%26Sentinel-1.fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -1337,9 +1337,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Number_of_precipitation_days_exceeding_20mm _90thPercentile(1950-2019).geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Risk_of_Number_of_precipitation_days_exceeding_20mm%20_90thPercentile(1950-2019).fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -1409,9 +1409,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Number_of_precipitation_days_exceeding_20mm _95thPercentile(1950-2019).geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Risk_of_Number_of_precipitation_days_exceeding_20mm%20_95thPercentile(1950-2019).fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -1481,9 +1481,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Number_of_precipitation_days_exceeding_20mm _99thPercentile(1950-2019).geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Risk_of_Number_of_precipitation_days_exceeding_20mm%20_99thPercentile(1950-2019).fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -1557,9 +1557,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_5Years_Return_Period.geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Risk_of_Daily_Precepitation_5Years_Return_Period.fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -1635,9 +1635,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_10Years_Return_Period.geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Risk_of_Daily_Precepitation_10Years_Return_Period.fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -1713,9 +1713,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_20Years_Return_Period.geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Risk_of_Daily_Precepitation_20Years_Return_Period.fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -1791,9 +1791,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_50Years_Return_Period.geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Risk_of_Daily_Precepitation_50Years_Return_Period.fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -1869,9 +1869,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Risk_of_Daily_Precepitation_100Years_Return_Period.geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Risk_of_Daily_Precepitation_100Years_Return_Period.fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -1943,9 +1943,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Land_Subsidence_Risk_Map_Sicily.geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Land_Subsidence_Risk_Map_Sicily.fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -2015,9 +2015,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Landslides_Risk_Map_Sicily.geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Landslides_Risk_Map_Sicily.fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -2087,9 +2087,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Land_Subsidence_Risk_Map_Sicily(Small_Region1).geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Land_Subsidence_Risk_Map_Sicily(Small_Region1).fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -2159,9 +2159,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Landslides_Risk_Map_Sicily(Small_Region1).geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Landslides_Risk_Map_Sicily(Small_Region1).fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -2231,9 +2231,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Land_Subsidence_Risk_Map_Sicily(Small_Region2).geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Land_Subsidence_Risk_Map_Sicily(Small_Region2).fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -2303,9 +2303,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Landslides_Risk_Map_Sicily(Small_Region2).geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Landslides_Risk_Map_Sicily(Small_Region2).fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -2375,9 +2375,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Land_Subsidence_Risk_Map_Sicily(Small_Region3).geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Land_Subsidence_Risk_Map_Sicily(Small_Region3).fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
@@ -2447,9 +2447,9 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Landslides_Risk_Map_Sicily(Small_Region3).geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Landslides_Risk_Map_Sicily(Small_Region3).fgb",
           "zIndex": 1,
-          "format": "geojson",
+          "format": "flatgeobuf",
           "style": [
             {
               "fill-color": [
