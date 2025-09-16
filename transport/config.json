@@ -634,10 +634,10 @@
       ]
     },
     {
-      "name": "Flood Hazard Map - VIIRS",
+      "name": "Flood Hazard Map - VIRIS",
       "isActive": false,
       "meta": {
-        "description": "The layer shows the flood risk category within a 100m buffer along the railway lines, determined by the frequency (%) of the intersecting pixels detected as flooded across all 5-day composite VIIRS images from Jan 2012 to Dec 2024, reflecting how often those pixels appeared flooded compared to the total number of images.",
+        "description": "The layer shows the flood risk category within a 100m buffer along the railway lines, determined by the frequency (%) of the intersecting pixels detected as flooded across all 5-day composite VIRIS images from Jan 2012 to Dec 2024, reflecting how often those pixels appeared flooded compared to the total number of images.",
         "attribution": {
           "text": "NOAA Satellite Proving Ground Global Flood Products Archive",
           "url": "https://jpssflood.gmu.edu/ "
@@ -670,14 +670,14 @@
           "controls": {
             "opacitySlider": true,
             "zoomToCenter": true,
-            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Hazard_Map_VIIRS.geojson"
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Hazard_Map_VIRIS.geojson"
           }
         },
         "interfaceGroup": "Flood Hazard Map - Italy"
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Flood_Hazard_Map_VIIRS.fgb",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Flood_Hazard_Map_VIRIS.fgb",
           "zIndex": 1,
           "format": "flatgeobuf",
           "style": [
@@ -964,10 +964,10 @@
       ]
     },
     {
-      "name": "Flood Hazard Map - VIIRS & Sentinel-1",
+      "name": "Flood Hazard Map - VIRIS & Sentinel-1",
       "isActive": false,
       "meta": {
-        "description": "The layer shows the flood risk category within a 100m buffer along the railway lines, determined by the frequency (%) of the intersecting pixels detected as flooded across all 5-day composite VIIRS images from Jan 2012 to Dec 2024 and Sentinel-1 imagery, reflecting how often those pixels appeared flooded compared to the total number of images.",
+        "description": "The layer shows the flood risk category within a 100m buffer along the railway lines, determined by the frequency (%) of the intersecting pixels detected as flooded across all 5-day composite VIRIS images from Jan 2012 to Dec 2024 and Sentinel-1 imagery, reflecting how often those pixels appeared flooded compared to the total number of images.",
         "attribution": {
           "text": "NOAA Satellite Proving Ground Global Flood Products Archive & Copernicus Sentinel-1",
           "url": "https://sentiwiki.copernicus.eu/web/sentinel-1"
@@ -1000,14 +1000,14 @@
           "controls": {
             "opacitySlider": true,
             "zoomToCenter": true,
-            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Hazard_Map_VIIRS&Sentinel-1.geojson"
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/Flood_Hazard_Map_VIRIS&Sentinel-1.geojson"
           }
         },
         "interfaceGroup": "Flood Hazard Map - Po Basin, Italy"
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Flood_Hazard_Map_VIIRS%26Sentinel-1.fgb",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOtransportation/fgb/Flood_Hazard_Map_VIRIS%26Sentinel-1.fgb",
           "zIndex": 1,
           "format": "flatgeobuf",
           "style": [
