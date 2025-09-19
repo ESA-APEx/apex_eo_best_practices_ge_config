@@ -7,7 +7,7 @@
     }
   },
   "mapConstraints": {
-        "zoom": 7,
+        "zoom": 12,
         "center": [0.7, 51.2]
    },
 
