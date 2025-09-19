@@ -7,7 +7,7 @@
     }
   },
   "mapConstraints": {
-        "zoom": 7,
+        "zoom": 6,
         "center": [13.5, 42]
    },
   "interfaceGroups": [
