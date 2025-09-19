@@ -6,6 +6,11 @@
       "title": "EOBPs - Solar Energy "
     }
   },
+  "mapConstraints": {
+        "zoom": 7,
+        "center": [0.7, 51.2]
+   },
+
   "interfaceGroups": [
     "Final Suitability Map - Kent",
     "Binary Constraint Layers - Kent",
