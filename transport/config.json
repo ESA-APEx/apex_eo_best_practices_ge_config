@@ -6,6 +6,10 @@
       "title": "EOBPs - Road and Rail (Railway)"
     }
   },
+  "mapConstraints": {
+        "zoom": 7,
+        "center": [13.5, 42]
+   },
   "interfaceGroups": [
     "Flood Exposure: Return Periods",
     "Flood Hazard Map - Italy",
