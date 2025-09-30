@@ -6,15 +6,18 @@
       "title": "EO Best Practices - Health"
     }
   },
-  "interfaceGroups": [],
+  "interfaceGroups": [
+    "World WMTS Layer",
+    "EO4SEM AEMISSIONS CH4 TROPOMI",
+    "WN_2025 Layer"
+  ],
   "exclusivitySets": [
     "labels"
   ],
-  "services": [],
   "sources": [
     {
       "name": "Open StreetMap",
-      "isActive": true,
+      "isActive": true, 
       "data": [
         {
           "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
@@ -30,6 +33,85 @@
           "url": "https://www.openstreetmap.org/copyright"
         },
         "categories": []
+      }
+    },
+    {
+      "name": "EO4SEM AEMISSIONS CH4 TROPOMI 20190101",
+      "isActive": false, 
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/pt_bgc/EO4SEM_AEMISSIONS_CH4_TROPOMI_WFMD_CAMSREGv8_201901_ch4_posterior.tif",
+          "format": "cog",
+          "zIndex": 1
+        }
+      ],
+      "meta": {
+        "description": "Description EO4SEM AEMISSIONS CH4 TROPOMI 20190101",
+	      "categories": []
+      },
+      "layout": {
+	      "interfaceGroup": "EO4SEM AEMISSIONS CH4 TROPOMI",
+        "layerCard": {
+          "toggleable": true,
+	      "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true
+          }
+        }
+      }
+    },
+	  {"name": "TESTE", "isActive": false, "meta": {"description": "Description EO4SEM AEMISSIONS CH4 TROPOMI 20190101", "attribution": {"text": null, "url": null}}, "categories": [], "layout": {"layerCard": {"toggleable": true, "legend": {"type": "swatch"}, "controls": {"opacitySlider": true, "zoomToCenter": true, "download": "https://storage.googleapis.com/pt_bgc/EO4SEM_AEMISSIONS_CH4_TROPOMI_WFMD_CAMSREGv8_201901_ch4_posterior.tif"}}, "interfaceGroup": "EO4SEM AEMISSIONS CH4 TROPOMI"}, "data": [{"url": "https://storage.googleapis.com/pt_bgc/EO4SEM_AEMISSIONS_CH4_TROPOMI_WFMD_CAMSREGv8_201901_ch4_posterior.tif", "zIndex": 1, "format": "cog"}]},
+    {
+      "name": "WMTS Example",
+      "isActive": false,
+      "meta": {
+        "description": "Example configuration of a WMTS layer",
+	      "categories": []
+      },
+      "layout": {
+	      "interfaceGroup": "World WMTS Layer",
+        "layerCard": {
+          "toggleable": true,
+	      "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true
+          }
+        }
+      },
+      "data": [
+	      {
+          "zIndex": 1,
+          "url": "https://services.terrascope.be/wmts/v2",
+          "layers": "WORLDCOVER_2021_S2_TCC",
+          "format": "wmts"
+     	  }
+      ]
+    },
+    {
+      "name": "WN_2025 - West Nile Virus Forecast",
+      "isActive": false,
+      "data": [
+        {
+	      "format": "wmts",
+	      "zIndex": 1,
+	      "url": "https://eo4health.api.brockmann-consult.de/api/wmts/1.0.0/WorldCRS84Quad/WMTSCapabilities.xml",
+	      "layers": "WN_2025.WNV"
+    	}
+      ],
+	  "timeframe": "Days",
+      "meta": {
+        "description": "Probability of occurrence of West Nile Virus mosquito in the Mediterranean region (2022-2025)",
+        "categories": []
+      },
+	  "layout": {
+        "interfaceGroup": "WN_2025 Layer",
+        "layerCard": {
+          "toggleable": true,
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true
+          }
+        }
       }
     }
   ]
