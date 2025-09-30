@@ -47,7 +47,7 @@
       ],
 	  "timeframe": "Days",
       "meta": {
-        "description": "Probability of occurrence of West Nile Virus mosquito in the Mediterranean region (2022-2025)",
+        "description": "This layer is a high-resolution (250-metre grid) forecast product that shows areas where West Nile virus circulation is likely to occur. It’s created by combining environmental satellite observations (temperature, vegetation, precipitation proxies) with epidemiological/mosquito-ecology models to estimate where conditions favor mosquito survival and viral transmission. For public health teams it’s useful as an early-warning map to prioritize mosquito control, targeted surveillance, and community warnings at a neighborhood scale rather than just county level.",
         "categories": []
       },
 	  "layout": {
@@ -74,7 +74,7 @@
       ],
 	  "timeframe": "Days",
       "meta": {
-        "description": "Multi-year product illustrating locations in the Baltic Sea where sea surface temperatures (SST) and other conditions have been favourable for Non-Cholera Vibrio growth, covering roughly 1995–2019.",
+        "description": "Multi-year product illustrating locations in the Baltic Sea where sea surface temperatures (SST) and other conditions have been favourable for Non-Cholera Vibrio growth, covering roughly 1995–2019. Produced by combining historical SST records (satellite and/or reanalyses) with ecological thresholds for Vibrio proliferation to show where and when public-health risks from seawater exposure or seafood consumption are elevated. Uses include seasonal bathing advisories, fisheries monitoring, and studies of climate-driven pathogen expansion. Methods adapted from: Baker-Austin et al., 2013.",
         "categories": []
       },
 	  "layout": {
