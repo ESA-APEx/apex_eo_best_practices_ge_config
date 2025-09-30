@@ -7,8 +7,6 @@
     }
   },
   "interfaceGroups": [
-    "World WMTS Layer",
-    "EO4SEM AEMISSIONS CH4 TROPOMI",
     "WN_2025 Layer"
   ],
   "exclusivitySets": [
@@ -34,58 +32,6 @@
         },
         "categories": []
       }
-    },
-    {
-      "name": "EO4SEM AEMISSIONS CH4 TROPOMI 20190101",
-      "isActive": false, 
-      "data": [
-        {
-          "url": "https://storage.googleapis.com/pt_bgc/EO4SEM_AEMISSIONS_CH4_TROPOMI_WFMD_CAMSREGv8_201901_ch4_posterior.tif",
-          "format": "cog",
-          "zIndex": 1
-        }
-      ],
-      "meta": {
-        "description": "Description EO4SEM AEMISSIONS CH4 TROPOMI 20190101",
-	      "categories": []
-      },
-      "layout": {
-	      "interfaceGroup": "EO4SEM AEMISSIONS CH4 TROPOMI",
-        "layerCard": {
-          "toggleable": true,
-	      "controls": {
-            "opacitySlider": true,
-            "zoomToCenter": true
-          }
-        }
-      }
-    },
-	  {"name": "TESTE", "isActive": false, "meta": {"description": "Description EO4SEM AEMISSIONS CH4 TROPOMI 20190101", "attribution": {"text": null, "url": null}}, "categories": [], "layout": {"layerCard": {"toggleable": true, "legend": {"type": "swatch"}, "controls": {"opacitySlider": true, "zoomToCenter": true, "download": "https://storage.googleapis.com/pt_bgc/EO4SEM_AEMISSIONS_CH4_TROPOMI_WFMD_CAMSREGv8_201901_ch4_posterior.tif"}}, "interfaceGroup": "EO4SEM AEMISSIONS CH4 TROPOMI"}, "data": [{"url": "https://storage.googleapis.com/pt_bgc/EO4SEM_AEMISSIONS_CH4_TROPOMI_WFMD_CAMSREGv8_201901_ch4_posterior.tif", "zIndex": 1, "format": "cog"}]},
-    {
-      "name": "WMTS Example",
-      "isActive": false,
-      "meta": {
-        "description": "Example configuration of a WMTS layer",
-	      "categories": []
-      },
-      "layout": {
-	      "interfaceGroup": "World WMTS Layer",
-        "layerCard": {
-          "toggleable": true,
-	      "controls": {
-            "opacitySlider": true,
-            "zoomToCenter": true
-          }
-        }
-      },
-      "data": [
-	      {
-          "zIndex": 1,
-          "url": "https://services.terrascope.be/wmts/v2",
-          "layers": "WORLDCOVER_2021_S2_TCC",
-          "format": "wmts"
-     	  }
-      ]
     },
     {
       "name": "WN_2025 - West Nile Virus Forecast",
