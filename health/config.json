@@ -56,7 +56,7 @@
           "toggleable": true,
 		  "legend": {
             "type": "image",
-            "url": "https://github.com/ESA-APEx/apex_eo_best_practices_ge_config/blob/main/health/WNV_legend.png"
+            "url": "https://storage.googleapis.com/pt_bgc/WNV_legend.png"
           },
           "controls": {
             "opacitySlider": true,
