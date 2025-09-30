@@ -7,7 +7,8 @@
     }
   },
   "interfaceGroups": [
-    "WN_2025 Layer"
+    "Vector Borne Diseases",
+	"Water Borne Diseases"
   ],
   "exclusivitySets": [
     "labels"
@@ -50,7 +51,34 @@
         "categories": []
       },
 	  "layout": {
-        "interfaceGroup": "WN_2025 Layer",
+        "interfaceGroup": "Vector Borne Diseases",
+        "layerCard": {
+          "toggleable": true,
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true
+          }
+        }
+      }
+    },
+	{
+      "name": "Baltic Sea Vibrio Risk Map (SST based)",
+      "isActive": false,
+      "data": [
+        {
+	      "format": "wmts",
+	      "zIndex": 1,
+	      "url": "https://eo4health.api.brockmann-consult.de/api/wmts/1.0.0/WorldCRS84Quad/WMTSCapabilities.xml",
+	      "layers": "WBD_Baltic_Sea_SST_based_Vibrio_Risk_map.SST_Risk_map"
+    	}
+      ],
+	  "timeframe": "Days",
+      "meta": {
+        "description": "Multi-year product illustrating locations in the Baltic Sea where sea surface temperatures (SST) and other conditions have been favourable for Non-Cholera Vibrio growth, covering roughly 1995–2019.",
+        "categories": []
+      },
+	  "layout": {
+        "interfaceGroup": "Water Borne Diseases",
         "layerCard": {
           "toggleable": true,
           "controls": {
