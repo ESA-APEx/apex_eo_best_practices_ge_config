@@ -75,12 +75,35 @@
 	  "timeframe": "Days",
       "meta": {
         "description": "Multi-year product illustrating locations in the Baltic Sea where sea surface temperatures (SST) and other conditions have been favourable for Non-Cholera Vibrio growth, covering roughly 1995–2019. Produced by combining historical SST records (satellite and/or reanalyses) with ecological thresholds for Vibrio proliferation to show where and when public-health risks from seawater exposure or seafood consumption are elevated. Uses include seasonal bathing advisories, fisheries monitoring, and studies of climate-driven pathogen expansion. Methods adapted from: Baker-Austin et al., 2013.",
-        "categories": []
+        "attribution": {
+          "text": "ESA EO4Health Resilience Virtual Observatory",
+          "url": "https://eo4health.esa.int/virtual-observatory"
+        },
+		"categories": [
+			{
+            "color": "#FFFF00",
+            "label": "Low risk (1)",
+            "value": 1
+          },
+          {
+            "color": "#FFA500",
+            "label": "Medium risk (2)",
+            "value": 2
+          },
+          {
+            "color": "#FF0000",
+            "label": "High risk (3)",
+            "value": 3
+          }
+		]
       },
 	  "layout": {
         "interfaceGroup": "Water Borne Diseases",
         "layerCard": {
           "toggleable": true,
+		  "legend": {
+            "type": "swatch"
+          },
           "controls": {
             "opacitySlider": true,
             "zoomToCenter": true
