@@ -40,7 +40,7 @@
       "data": [
         {
 	      "format": "wmts",
-	      "zIndex": 1,
+	      "zIndex": 3,
 	      "url": "https://eo4health.api.brockmann-consult.de/api/wmts/1.0.0/WorldCRS84Quad/WMTSCapabilities.xml",
 	      "layers": "WN_2025.WNV"
     	}
