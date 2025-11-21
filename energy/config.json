@@ -3,21 +3,17 @@
   "layout": {
     "navigation": {
       "logo": "https://www.esa.int/extension/pillars/design/pillars/images/ESA_Logo.svg",
-      "title": "EOBPs - Solar Energy "
+      "title": "EOBPs - Solar Energy"
     }
   },
-  "mapConstraints": {
-        "zoom": 9,
-        "center": [0.7, 51.2]
-   },
-
   "interfaceGroups": [
     "Final Suitability Map - Kent",
     "Binary Constraint Layers - Kent",
     "Factor Layers - Kent",
     "LST analysis with SSI - Hollyhurst Farm",
     "LST analysis with DNI - Hollyhurst Farm",
-    "Max/Min daily LST - Hollyhurst Farm"
+    "Max/Min daily LST - Hollyhurst Farm",
+    "LST analysis with SSI - ESA ESRIN"
   ],
   "exclusivitySets": [],
   "sources": [
@@ -55,7 +51,7 @@
         "categories": [
           {
             "color": "#959191",
-            "label": "constraint areas",
+            "label": "Constriant areas",
             "value": 1
           },
           {
@@ -1589,6 +1585,48 @@
       "data": [
         {
           "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/Hollyhurst_Farm.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Whole year 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in 2024 over ESA ESRIN, Frascati, Italy.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA-ESRIN(epsg3857).geojson"
+          }
+        },
+        "interfaceGroup": "LST analysis with SSI - ESA ESRIN"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA-ESRIN(epsg3857).geojson",
           "zIndex": 1,
           "format": "geojson",
           "style": [
