@@ -1688,7 +1688,7 @@
           },
 		  "controls": {
             "opacitySlider": true,
-            "zoomToCenter": true,
+            "zoomToCenter": true
           }
         }
       }
