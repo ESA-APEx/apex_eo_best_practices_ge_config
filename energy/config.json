@@ -39,6 +39,27 @@
       ],
       "isBaseLayer": true
     },
+	{
+      "name": "WMTS terrascope",
+      "isActive": true,
+      "isBaseLayer": true,
+      "meta": {
+        "description": "",
+        "attribution": {
+          "text": "terrascope",
+          "url": "https://services.terrascope.be/wmts/v2"
+        },
+        "categories": []
+      },
+      "data": [
+        {
+          "zIndex": 1,
+          "url": "https://services.terrascope.be/wmts/v2",
+          "layers": "WORLDCOVER_2021_S2_TCC",
+          "format": "wmts"
+        }
+      ]
+    },
     {
       "name": "Final Suitability Map - Classes",
       "isActive": false,
