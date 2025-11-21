@@ -1631,10 +1631,10 @@
           "format": "geojson",
           "style": [
             {
-              "fill-color": "rgba(0, 0, 255, 0.6)"
+              "fill-color": "rgba(255, 0, 255, 0.6)"
             },
             {
-              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-color": "rgba(255, 0, 255, 1.0)",
               "stroke-width": 2
             }
           ]
