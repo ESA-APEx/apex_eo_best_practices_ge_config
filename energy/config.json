@@ -1680,7 +1680,7 @@
         "endColor": "#00441b"
       },
       "layout": {
-        "interfaceGroup": "Test Data",
+        "interfaceGroup": "LST analysis with SSI - ESA ESRIN",
         "layerCard": {
           "toggleable": true,
 		  "legend": {
