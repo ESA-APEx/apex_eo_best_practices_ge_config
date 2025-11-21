@@ -1680,6 +1680,48 @@
           "toggleable": true
         }
       }
+    },
+    {
+      "name": "Whole year 2024",
+      "isActive": false,
+      "meta": {
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in 2024 over ESA ESRIN, Frascati, Italy.",
+        "attribution": {
+          "text": "GMV",
+          "url": "https://www.gmv.com/en-es"
+        },
+        "categories": []
+      },
+      "layout": {
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "swatch"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/Figures_lst_sis_ESA_ESRIN.zip"
+          }
+        },
+        "interfaceGroup": "LST analysis with SSI - ESA ESRIN"
+      },
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA-ESRIN(epsg3857)-2.geojson",
+          "zIndex": 1,
+          "format": "geojson",
+          "style": [
+            {
+              "fill-color": "rgba(0, 0, 255, 0.6)"
+            },
+            {
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
+              "stroke-width": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
