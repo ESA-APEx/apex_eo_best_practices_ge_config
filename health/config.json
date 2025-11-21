@@ -8,8 +8,7 @@
   },
   "interfaceGroups": [
     "Vector Borne Diseases",
-	"Water Borne Diseases",
-	"Test Data"
+	"Water Borne Diseases"
   ],
   "exclusivitySets": [
     "labels"
