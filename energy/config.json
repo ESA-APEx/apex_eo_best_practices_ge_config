@@ -1695,6 +1695,115 @@
       }
     },
     {
+      "name": "ESA ESRIN Land Surface Temperature",
+      "isActive": false,
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2015_05_08_LST.tif",
+          "format": "cog",
+          "zIndex": 2,
+          "timestamps": [
+            1431033600
+          ]
+        },
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2016_05_08_LST.tif",
+          "format": "cog",
+          "zIndex": 2,
+          "timestamps": [
+            1462646400
+          ]
+        },
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2017_05_08_LST.tif",
+          "format": "cog",
+          "zIndex": 2,
+          "timestamps": [
+            1494134400
+          ]
+        },
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2018_05_08_LST.tif",
+          "format": "cog",
+          "zIndex": 2,
+          "timestamps": [
+            1525776000
+          ]
+        },
+		{
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2019_05_08_LST.tif",
+          "format": "cog",
+          "zIndex": 2,
+          "timestamps": [
+            1557398400
+          ]
+        },
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2020_05_08_LST.tif",
+          "format": "cog",
+          "zIndex": 2,
+          "timestamps": [
+            1588896000
+          ]
+        },
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2021_05_08_LST.tif",
+          "format": "cog",
+          "zIndex": 2,
+          "timestamps": [
+            1620518400
+          ]
+        },
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2022_05_08_LST.tif",
+          "format": "cog",
+          "zIndex": 2,
+          "timestamps": [
+            1652131200
+          ]
+        },
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2023_05_08_LST.tif",
+          "format": "cog",
+          "zIndex": 2,
+          "timestamps": [
+            1683648000
+          ]
+        },
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2024_05_08_LST.tif",
+          "format": "cog",
+          "zIndex": 2,
+          "timestamps": [
+            1715260800
+          ]
+        }
+      ],
+      "timeframe": "Years",
+      "meta": {
+        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
+        "categories": [],
+        "min": 33,
+        "max": 40,
+        "startColor": "#f0f01d",
+        "endColor": "#eb1f10",
+        "units": "[add here]"
+      },
+      "layout": {
+        "interfaceGroup": "LST analysis with SSI - ESA ESRIN",
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "gradient"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true
+          }
+        }
+      }
+    },
+    {
       "name": "ESA ESRIN Albedo 2016",
       "isActive": false,
       "data": [
