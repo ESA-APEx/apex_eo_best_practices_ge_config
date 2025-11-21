@@ -1619,7 +1619,7 @@
           "controls": {
             "opacitySlider": true,
             "zoomToCenter": true,
-            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA-ESRIN(epsg3857).geojson"
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/Figures_lst_sis_ESA_ESRIN.zip"
           }
         },
         "interfaceGroup": "LST analysis with SSI - ESA ESRIN"
@@ -1631,10 +1631,10 @@
           "format": "geojson",
           "style": [
             {
-              "fill-color": "rgba(255, 0, 255, 0.6)"
+              "fill-color": "rgba(0, 0, 255, 0.6)"
             },
             {
-              "stroke-color": "rgba(255, 0, 255, 1.0)",
+              "stroke-color": "rgba(0, 0, 255, 1.0)",
               "stroke-width": 2
             }
           ]
