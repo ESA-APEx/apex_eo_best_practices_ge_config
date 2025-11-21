@@ -1677,7 +1677,11 @@
       "layout": {
         "interfaceGroup": "LST analysis with SSI - ESA ESRIN",
         "layerCard": {
-          "toggleable": true
+          "toggleable": true,
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true
+          }
         }
       }
     },
