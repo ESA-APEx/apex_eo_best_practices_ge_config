@@ -1626,7 +1626,7 @@
       },
       "data": [
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA-ESRIN(epsg3857).geojson",
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA-ESRIN(epsg3857)-2.geojson",
           "zIndex": 1,
           "format": "geojson",
           "style": [
