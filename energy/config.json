@@ -1672,12 +1672,21 @@
       ],
       "timeframe": "Years",
       "meta": {
-        "description": "Broadband surface albedo was derived from Sentinel-2 Level-2A surface reflectance using a narrow-to-broadband conversion approach based on the coefficients presented in “Albedo Retrieval From Sentinel-2 by New Narrow-to-Broadband Conversion Coefficients” (2020). After cloud masking, a median composite (2024) was generated, and albedo was calculated as a weighted linear combination of Sentinel-2 bands (B2, B3, B4, B8, B11, B12). The resulting product represents the fraction of incoming solar radiation reflected by the surface at 10 m resolution, suitable for analyzing urban reflectivity and surface energy balance over ESA ESRIN Campus. An albedo map shows how much sunlight the surface reflects: lower values (darker colors) indicate surfaces that absorb more heat, while higher values (warmer colors) indicate brighter surfaces that reflect more sunlight."
+        "description": "Broadband surface albedo was derived from Sentinel-2 Level-2A surface reflectance using a narrow-to-broadband conversion approach based on the coefficients presented in “Albedo Retrieval From Sentinel-2 by New Narrow-to-Broadband Conversion Coefficients” (2020). After cloud masking, a median composite (2024) was generated, and albedo was calculated as a weighted linear combination of Sentinel-2 bands (B2, B3, B4, B8, B11, B12). The resulting product represents the fraction of incoming solar radiation reflected by the surface at 10 m resolution, suitable for analyzing urban reflectivity and surface energy balance over ESA ESRIN Campus. An albedo map shows how much sunlight the surface reflects: lower values (darker colors) indicate surfaces that absorb more heat, while higher values (warmer colors) indicate brighter surfaces that reflect more sunlight.",
+        "categories": [],
+        "min": 0.05,
+        "max": 0.35,
+        "startColor": "#f0f01d",
+        "endColor": "#eb1f10",
+        "units": "[add here]"
       },
       "layout": {
         "interfaceGroup": "LST analysis with SSI - ESA ESRIN",
         "layerCard": {
           "toggleable": true,
+          "legend": {
+            "type": "gradient"
+          },
           "controls": {
             "opacitySlider": true,
             "zoomToCenter": true
