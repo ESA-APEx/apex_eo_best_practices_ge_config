@@ -1849,6 +1849,312 @@
           }
         }
       }
+    },
+	{
+      "name": "ESA ESRIN Land Surface Temperature 2016",
+      "isActive": false,
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2016_05_08_LST.tif",
+          "format": "cog",
+          "zIndex": 1
+        }
+      ],
+      "meta": {
+        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
+        "categories": [],
+        "min": 39.2,
+        "max": 41.7,
+        "startColor": "#f0f01d",
+        "endColor": "#eb1f10",
+        "units": "[Celsius]"
+      },
+      "layout": {
+        "interfaceGroup": "ESA ESRIN Land Surface Temperature",
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "gradient"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2016_05_08_LST.tif"
+          }
+        }
+      }
+    },
+	{
+      "name": "ESA ESRIN Land Surface Temperature 2017",
+      "isActive": false,
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2017_05_08_LST.tif",
+          "format": "cog",
+          "zIndex": 1
+        }
+      ],
+      "meta": {
+        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
+        "categories": [],
+        "min": 39.2,
+        "max": 41.6,
+        "startColor": "#f0f01d",
+        "endColor": "#eb1f10",
+        "units": "[Celsius]"
+      },
+      "layout": {
+        "interfaceGroup": "ESA ESRIN Land Surface Temperature",
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "gradient"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2017_05_08_LST.tif"
+          }
+        }
+      }
+    },
+	{
+      "name": "ESA ESRIN Land Surface Temperature 2018",
+      "isActive": false,
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2018_05_08_LST.tif",
+          "format": "cog",
+          "zIndex": 1
+        }
+      ],
+      "meta": {
+        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
+        "categories": [],
+        "min": 36,
+        "max": 39,
+        "startColor": "#f0f01d",
+        "endColor": "#eb1f10",
+        "units": "[Celsius]"
+      },
+      "layout": {
+        "interfaceGroup": "ESA ESRIN Land Surface Temperature",
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "gradient"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2018_05_08_LST.tif"
+          }
+        }
+      }
+    },
+	{
+      "name": "ESA ESRIN Land Surface Temperature 2019",
+      "isActive": false,
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2019_05_08_LST.tif",
+          "format": "cog",
+          "zIndex": 1
+        }
+      ],
+      "meta": {
+        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
+        "categories": [],
+        "min": 31,
+        "max": 33.7,
+        "startColor": "#f0f01d",
+        "endColor": "#eb1f10",
+        "units": "[Celsius]"
+      },
+      "layout": {
+        "interfaceGroup": "ESA ESRIN Land Surface Temperature",
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "gradient"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2019_05_08_LST.tif"
+          }
+        }
+      }
+    },
+	{
+      "name": "ESA ESRIN Land Surface Temperature 2020",
+      "isActive": false,
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2020_05_08_LST.tif",
+          "format": "cog",
+          "zIndex": 1
+        }
+      ],
+      "meta": {
+        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
+        "categories": [],
+        "min": 40.2,
+        "max": 43,
+        "startColor": "#f0f01d",
+        "endColor": "#eb1f10",
+        "units": "[Celsius]"
+      },
+      "layout": {
+        "interfaceGroup": "ESA ESRIN Land Surface Temperature",
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "gradient"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2020_05_08_LST.tif"
+          }
+        }
+      }
+    },
+	{
+      "name": "ESA ESRIN Land Surface Temperature 2021",
+      "isActive": false,
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2021_05_08_LST.tif",
+          "format": "cog",
+          "zIndex": 1
+        }
+      ],
+      "meta": {
+        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
+        "categories": [],
+        "min": 10.5,
+        "max": 18.9,
+        "startColor": "#f0f01d",
+        "endColor": "#eb1f10",
+        "units": "[Celsius]"
+      },
+      "layout": {
+        "interfaceGroup": "ESA ESRIN Land Surface Temperature",
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "gradient"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2021_05_08_LST.tif"
+          }
+        }
+      }
+    },
+	{
+      "name": "ESA ESRIN Land Surface Temperature 2022",
+      "isActive": false,
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2022_05_08_LST.tif",
+          "format": "cog",
+          "zIndex": 1
+        }
+      ],
+      "meta": {
+        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
+        "categories": [],
+        "min": 41.1,
+        "max": 43.7,
+        "startColor": "#f0f01d",
+        "endColor": "#eb1f10",
+        "units": "[Celsius]"
+      },
+      "layout": {
+        "interfaceGroup": "ESA ESRIN Land Surface Temperature",
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "gradient"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2022_05_08_LST.tif"
+          }
+        }
+      }
+    },
+	{
+      "name": "ESA ESRIN Land Surface Temperature 2023",
+      "isActive": false,
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2023_05_08_LST.tif",
+          "format": "cog",
+          "zIndex": 1
+        }
+      ],
+      "meta": {
+        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
+        "categories": [],
+        "min": 32.8,
+        "max": 43.7,
+        "startColor": "#f0f01d",
+        "endColor": "#eb1f10",
+        "units": "[Celsius]"
+      },
+      "layout": {
+        "interfaceGroup": "ESA ESRIN Land Surface Temperature",
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "gradient"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2023_05_08_LST.tif"
+          }
+        }
+      }
+    },
+	{
+      "name": "ESA ESRIN Land Surface Temperature 2024",
+      "isActive": false,
+      "data": [
+        {
+          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2024_05_08_LST.tif",
+          "format": "cog",
+          "zIndex": 1
+        }
+      ],
+      "meta": {
+        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
+        "categories": [],
+        "min": 35.3,
+        "max": 40.4,
+        "startColor": "#f0f01d",
+        "endColor": "#eb1f10",
+        "units": "[Celsius]"
+      },
+      "layout": {
+        "interfaceGroup": "ESA ESRIN Land Surface Temperature",
+        "layerCard": {
+          "toggleable": true,
+          "legend": {
+            "type": "gradient"
+          },
+          "controls": {
+            "opacitySlider": true,
+            "zoomToCenter": true,
+            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2024_05_08_LST.tif"
+          }
+        }
+      }
     }
   ]
 }
