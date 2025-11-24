@@ -1840,7 +1840,7 @@
             "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2015_05_08_LST.tif"
           }
         },
-        "interfaceGroup": "LST analysis with SSI - Hollyhurst Farm"
+        "interfaceGroup": "ESA ESRIN Land Surface Temperature"
       },
       "data": [
         {
