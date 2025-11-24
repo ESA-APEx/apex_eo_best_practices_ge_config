@@ -2174,8 +2174,7 @@
         "min": 0.13,
         "max": 0.35,
         "startColor": "#f0f01d",
-        "endColor": "#eb1f10",
-        "units": "[Celsius]"
+        "endColor": "#eb1f10"
       },
       "layout": {
         "interfaceGroup": "ESA ESRIN Albedo",
@@ -2208,8 +2207,7 @@
         "min": 0.13,
         "max": 0.33,
         "startColor": "#f0f01d",
-        "endColor": "#eb1f10",
-        "units": "[Celsius]"
+        "endColor": "#eb1f10"
       },
       "layout": {
         "interfaceGroup": "ESA ESRIN Albedo",
@@ -2242,8 +2240,7 @@
         "min": 0.135,
         "max": 0.352,
         "startColor": "#f0f01d",
-        "endColor": "#eb1f10",
-        "units": "[Celsius]"
+        "endColor": "#eb1f10"
       },
       "layout": {
         "interfaceGroup": "ESA ESRIN Albedo",
