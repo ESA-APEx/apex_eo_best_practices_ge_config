@@ -1768,14 +1768,6 @@
           ]
         },
         {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2021_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 2,
-          "timestamps": [
-            1620518400
-          ]
-        },
-        {
           "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2022_05_08_LST.tif",
           "format": "cog",
           "zIndex": 2,
@@ -1804,7 +1796,7 @@
       "meta": {
         "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
         "categories": [],
-        "min": 10,
+        "min": 33,
         "max": 40,
         "startColor": "#f0f01d",
         "endColor": "#eb1f10",
