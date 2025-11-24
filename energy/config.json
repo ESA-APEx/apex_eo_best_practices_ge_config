@@ -1815,40 +1815,6 @@
           }
         }
       }
-    },
-	{
-      "name": "ESA ESRIN Land Surface Temperature 2015",
-      "isActive": false,
-      "meta": {
-        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
-        "categories": [],
-        "min": 37.5,
-        "max": 43,
-        "startColor": "#f0f01d",
-        "endColor": "#eb1f10",
-        "units": "[Celsius]"
-      },
-      "layout": {
-        "layerCard": {
-          "toggleable": true,
-          "legend": {
-            "type": "gradient"
-          },
-          "controls": {
-            "opacitySlider": true,
-            "zoomToCenter": true,
-            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2015_05_08_LST.tif"
-          }
-        },
-        "interfaceGroup": "ESA ESRIN Land Surface Temperature"
-      },
-      "data": [
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2015_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 1,
-        }
-      ]
     }
   ]
 }
