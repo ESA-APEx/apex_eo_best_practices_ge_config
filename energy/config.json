@@ -13,12 +13,12 @@
     "LST analysis with SSI - Hollyhurst Farm",
     "LST analysis with DNI - Hollyhurst Farm",
     "Max/Min daily LST - Hollyhurst Farm",
-	"LST analysis with SSI - ESA ESRIN"
+    "LST analysis with SSI - ESA ESRIN"
   ],
   "exclusivitySets": [],
   "sources": [
     {
-      "name": "\u00a9 OpenStreetMap contributors \u00a9 CARTO",
+      "name": "© OpenStreetMap contributors © CARTO",
       "isActive": true,
       "layout": {
         "interfaceGroup": "Basemaps"
@@ -26,7 +26,7 @@
       "meta": {
         "description": "Open Street Map base layer",
         "attribution": {
-          "text": "\u00a9 OpenStreetMap contributors",
+          "text": "© OpenStreetMap contributors",
           "url": "https://www.openstreetmap.org/copyright"
         }
       },
@@ -39,7 +39,7 @@
       ],
       "isBaseLayer": true
     },
-	{
+    {
       "name": "WMTS terrascope",
       "isActive": true,
       "isBaseLayer": true,
@@ -64,7 +64,7 @@
       "name": "Final Suitability Map - Classes",
       "isActive": false,
       "meta": {
-        "description": "A suitability map that categorizes Kent into different suitability levels based on their suitability for developing a solar farm: \u2018Not Suitable,\u2019 \u2018Least Suitable,\u2019 \u2018Moderately Suitable,\u2019 and \u2018Most Suitable\u2019.",
+        "description": "A suitability map that categorizes Kent into different suitability levels based on their suitability for developing a solar farm: ‘Not Suitable,’ ‘Least Suitable,’ ‘Moderately Suitable,’ and ‘Most Suitable’.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -574,7 +574,7 @@
       "name": "January 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in January over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m² in January over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -616,7 +616,7 @@
       "name": "February 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in February over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m² in February over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -658,7 +658,7 @@
       "name": "March 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in March over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m² in March over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -700,7 +700,7 @@
       "name": "April 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in April over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m² in April over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -742,7 +742,7 @@
       "name": "May 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in May over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m² in May over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -784,7 +784,7 @@
       "name": "June 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in June over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m² in June over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -826,7 +826,7 @@
       "name": "July 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in July over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m² in July over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -868,7 +868,7 @@
       "name": "August 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in August over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m² in August over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -910,7 +910,7 @@
       "name": "September 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in September over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m² in September over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -952,7 +952,7 @@
       "name": "October 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in October over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m² in October over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -994,7 +994,7 @@
       "name": "November 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in November over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m² in November over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -1036,7 +1036,7 @@
       "name": "December 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in December over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m² in December over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -1078,7 +1078,7 @@
       "name": "January 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in January over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m² in January over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -1120,7 +1120,7 @@
       "name": "February 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in February over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m² in February over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -1162,7 +1162,7 @@
       "name": "March 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in March over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m² in March over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -1204,7 +1204,7 @@
       "name": "April 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in April over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m² in April over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -1246,7 +1246,7 @@
       "name": "May 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in May over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m² in May over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -1288,7 +1288,7 @@
       "name": "June 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in June over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m² in June over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -1330,7 +1330,7 @@
       "name": "July 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in July over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m² in July over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -1372,7 +1372,7 @@
       "name": "August 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in August over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m² in August over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -1414,7 +1414,7 @@
       "name": "September 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in September over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m² in September over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -1456,7 +1456,7 @@
       "name": "October 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in October over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m² in October over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -1498,7 +1498,7 @@
       "name": "November 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in November over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m² in November over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -1540,7 +1540,7 @@
       "name": "December 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m\u00b2 in December over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Direct Normal Irradiation (DNI) above threshold of 50 W/m² in December over targeting a new solar farm which is planned for development at Hollyhurst Farm in Warwickshire County, England.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -1624,7 +1624,7 @@
       "name": "Whole year 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in 2024 over ESA ESRIN, Frascati, Italy.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m² in 2024 over ESA ESRIN, Frascati, Italy.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -1663,602 +1663,10 @@
       ]
     },
     {
-      "name": "ESA ESRIN Albedo",
-      "isActive": false,
-      "data": [
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_Albedo_2016_COG_LST.tif",
-          "format": "cog",
-          "zIndex": 2,
-          "timestamps": [
-            1451606400
-          ]
-        },
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_Albedo_2020_COG_LST.tif",
-          "format": "cog",
-          "zIndex": 2,
-          "timestamps": [
-            1577836800
-          ]
-        },
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_Albedo_2024_COG_LST.tif",
-          "format": "cog",
-          "zIndex": 2,
-          "timestamps": [
-            1704067200
-          ]
-        }
-      ],
-      "timeframe": "Years",
-      "meta": {
-        "description": "Broadband surface albedo was derived from Sentinel-2 Level-2A surface reflectance using a narrow-to-broadband conversion approach based on the coefficients presented in “Albedo Retrieval From Sentinel-2 by New Narrow-to-Broadband Conversion Coefficients” (2020). After cloud masking, a median composite (2024) was generated, and albedo was calculated as a weighted linear combination of Sentinel-2 bands (B2, B3, B4, B8, B11, B12). The resulting product represents the fraction of incoming solar radiation reflected by the surface at 10 m resolution, suitable for analyzing urban reflectivity and surface energy balance over ESA ESRIN Campus. An albedo map shows how much sunlight the surface reflects: lower values (darker colors) indicate surfaces that absorb more heat, while higher values (warmer colors) indicate brighter surfaces that reflect more sunlight.",
-        "categories": [],
-        "min": 0.05,
-        "max": 0.35,
-        "startColor": "#f0f01d",
-        "endColor": "#eb1f10"
-      },
-      "layout": {
-        "interfaceGroup": "LST analysis with SSI - ESA ESRIN",
-        "layerCard": {
-          "toggleable": true,
-          "legend": {
-            "type": "gradient"
-          },
-          "controls": {
-            "opacitySlider": true,
-            "zoomToCenter": true
-          }
-        }
-      }
-    },
-    {
-      "name": "ESA ESRIN Land Surface Temperature",
-      "isActive": false,
-      "data": [
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2015_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 2,
-          "timestamps": [
-            1431033600
-          ]
-        },
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2016_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 2,
-          "timestamps": [
-            1462646400
-          ]
-        },
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2017_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 2,
-          "timestamps": [
-            1494134400
-          ]
-        },
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2018_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 2,
-          "timestamps": [
-            1525776000
-          ]
-        },
-		{
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2019_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 2,
-          "timestamps": [
-            1557398400
-          ]
-        },
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2020_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 2,
-          "timestamps": [
-            1588896000
-          ]
-        },
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2022_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 2,
-          "timestamps": [
-            1652131200
-          ]
-        },
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2023_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 2,
-          "timestamps": [
-            1683648000
-          ]
-        },
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2024_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 2,
-          "timestamps": [
-            1715260800
-          ]
-        }
-      ],
-      "timeframe": "Years",
-      "meta": {
-        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
-        "categories": [],
-        "min": 30,
-        "max": 40,
-        "startColor": "#f0f01d",
-        "endColor": "#eb1f10",
-        "units": "[Celsius]"
-      },
-      "layout": {
-        "interfaceGroup": "LST analysis with SSI - ESA ESRIN_remove",
-        "layerCard": {
-          "toggleable": true,
-          "legend": {
-            "type": "gradient"
-          },
-          "controls": {
-            "opacitySlider": true,
-            "zoomToCenter": true
-          }
-        }
-      }
-    },
-	{
-      "name": "ESA ESRIN Land Surface Temperature 2015",
-      "isActive": false,
-      "data": [
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2015_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 1
-        }
-      ],
-      "meta": {
-        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
-        "categories": [],
-        "min": 37.5,
-        "max": 40.3,
-        "startColor": "#f0f01d",
-        "endColor": "#eb1f10",
-        "units": "[Celsius]"
-      },
-      "layout": {
-        "interfaceGroup": "ESA ESRIN Land Surface Temperature",
-        "layerCard": {
-          "toggleable": true,
-          "legend": {
-            "type": "gradient"
-          },
-          "controls": {
-            "opacitySlider": true,
-            "zoomToCenter": true,
-            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2015_05_08_LST.tif"
-          }
-        }
-      }
-    },
-	{
-      "name": "ESA ESRIN Land Surface Temperature 2016",
-      "isActive": false,
-      "data": [
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2016_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 1
-        }
-      ],
-      "meta": {
-        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
-        "categories": [],
-        "min": 39.2,
-        "max": 41.7,
-        "startColor": "#f0f01d",
-        "endColor": "#eb1f10",
-        "units": "[Celsius]"
-      },
-      "layout": {
-        "interfaceGroup": "ESA ESRIN Land Surface Temperature",
-        "layerCard": {
-          "toggleable": true,
-          "legend": {
-            "type": "gradient"
-          },
-          "controls": {
-            "opacitySlider": true,
-            "zoomToCenter": true,
-            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2016_05_08_LST.tif"
-          }
-        }
-      }
-    },
-	{
-      "name": "ESA ESRIN Land Surface Temperature 2017",
-      "isActive": false,
-      "data": [
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2017_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 1
-        }
-      ],
-      "meta": {
-        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
-        "categories": [],
-        "min": 41.6,
-        "max": 44.5,
-        "startColor": "#f0f01d",
-        "endColor": "#eb1f10",
-        "units": "[Celsius]"
-      },
-      "layout": {
-        "interfaceGroup": "ESA ESRIN Land Surface Temperature",
-        "layerCard": {
-          "toggleable": true,
-          "legend": {
-            "type": "gradient"
-          },
-          "controls": {
-            "opacitySlider": true,
-            "zoomToCenter": true,
-            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2017_05_08_LST.tif"
-          }
-        }
-      }
-    },
-	{
-      "name": "ESA ESRIN Land Surface Temperature 2018",
-      "isActive": false,
-      "data": [
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2018_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 1
-        }
-      ],
-      "meta": {
-        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
-        "categories": [],
-        "min": 36,
-        "max": 39,
-        "startColor": "#f0f01d",
-        "endColor": "#eb1f10",
-        "units": "[Celsius]"
-      },
-      "layout": {
-        "interfaceGroup": "ESA ESRIN Land Surface Temperature",
-        "layerCard": {
-          "toggleable": true,
-          "legend": {
-            "type": "gradient"
-          },
-          "controls": {
-            "opacitySlider": true,
-            "zoomToCenter": true,
-            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2018_05_08_LST.tif"
-          }
-        }
-      }
-    },
-	{
-      "name": "ESA ESRIN Land Surface Temperature 2019",
-      "isActive": false,
-      "data": [
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2019_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 1
-        }
-      ],
-      "meta": {
-        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
-        "categories": [],
-        "min": 31,
-        "max": 33.7,
-        "startColor": "#f0f01d",
-        "endColor": "#eb1f10",
-        "units": "[Celsius]"
-      },
-      "layout": {
-        "interfaceGroup": "ESA ESRIN Land Surface Temperature",
-        "layerCard": {
-          "toggleable": true,
-          "legend": {
-            "type": "gradient"
-          },
-          "controls": {
-            "opacitySlider": true,
-            "zoomToCenter": true,
-            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2019_05_08_LST.tif"
-          }
-        }
-      }
-    },
-	{
-      "name": "ESA ESRIN Land Surface Temperature 2020",
-      "isActive": false,
-      "data": [
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2020_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 1
-        }
-      ],
-      "meta": {
-        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
-        "categories": [],
-        "min": 40.2,
-        "max": 43,
-        "startColor": "#f0f01d",
-        "endColor": "#eb1f10",
-        "units": "[Celsius]"
-      },
-      "layout": {
-        "interfaceGroup": "ESA ESRIN Land Surface Temperature",
-        "layerCard": {
-          "toggleable": true,
-          "legend": {
-            "type": "gradient"
-          },
-          "controls": {
-            "opacitySlider": true,
-            "zoomToCenter": true,
-            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2020_05_08_LST.tif"
-          }
-        }
-      }
-    },
-	{
-      "name": "ESA ESRIN Land Surface Temperature 2021",
-      "isActive": false,
-      "data": [
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2021_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 1
-        }
-      ],
-      "meta": {
-        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
-        "categories": [],
-        "min": 10.5,
-        "max": 18.9,
-        "startColor": "#f0f01d",
-        "endColor": "#eb1f10",
-        "units": "[Celsius]"
-      },
-      "layout": {
-        "interfaceGroup": "ESA ESRIN Land Surface Temperature",
-        "layerCard": {
-          "toggleable": true,
-          "legend": {
-            "type": "gradient"
-          },
-          "controls": {
-            "opacitySlider": true,
-            "zoomToCenter": true,
-            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2021_05_08_LST.tif"
-          }
-        }
-      }
-    },
-	{
-      "name": "ESA ESRIN Land Surface Temperature 2022",
-      "isActive": false,
-      "data": [
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2022_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 1
-        }
-      ],
-      "meta": {
-        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
-        "categories": [],
-        "min": 41.1,
-        "max": 43.7,
-        "startColor": "#f0f01d",
-        "endColor": "#eb1f10",
-        "units": "[Celsius]"
-      },
-      "layout": {
-        "interfaceGroup": "ESA ESRIN Land Surface Temperature",
-        "layerCard": {
-          "toggleable": true,
-          "legend": {
-            "type": "gradient"
-          },
-          "controls": {
-            "opacitySlider": true,
-            "zoomToCenter": true,
-            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2022_05_08_LST.tif"
-          }
-        }
-      }
-    },
-	{
-      "name": "ESA ESRIN Land Surface Temperature 2023",
-      "isActive": false,
-      "data": [
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2023_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 1
-        }
-      ],
-      "meta": {
-        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
-        "categories": [],
-        "min": 32.8,
-        "max": 43.7,
-        "startColor": "#f0f01d",
-        "endColor": "#eb1f10",
-        "units": "[Celsius]"
-      },
-      "layout": {
-        "interfaceGroup": "ESA ESRIN Land Surface Temperature",
-        "layerCard": {
-          "toggleable": true,
-          "legend": {
-            "type": "gradient"
-          },
-          "controls": {
-            "opacitySlider": true,
-            "zoomToCenter": true,
-            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2023_05_08_LST.tif"
-          }
-        }
-      }
-    },
-	{
-      "name": "ESA ESRIN Land Surface Temperature 2024",
-      "isActive": false,
-      "data": [
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2024_05_08_LST.tif",
-          "format": "cog",
-          "zIndex": 1
-        }
-      ],
-      "meta": {
-        "description": "Land Surface Temperature (LST) was derived from Landsat 8 Collection 2 Level-2 thermal data using the TIRS Band 10 (ST_B10). The dataset provides surface temperature in Kelvin after atmospheric correction.",
-        "categories": [],
-        "min": 35.3,
-        "max": 40.4,
-        "startColor": "#f0f01d",
-        "endColor": "#eb1f10",
-        "units": "[Celsius]"
-      },
-      "layout": {
-        "interfaceGroup": "ESA ESRIN Land Surface Temperature",
-        "layerCard": {
-          "toggleable": true,
-          "legend": {
-            "type": "gradient"
-          },
-          "controls": {
-            "opacitySlider": true,
-            "zoomToCenter": true,
-            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_LST_2024_05_08_LST.tif"
-          }
-        }
-      }
-    },
-	{
-      "name": "ESA ESRIN Albedo 2016",
-      "isActive": false,
-      "data": [
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_Albedo_2016_COG_LST.tif",
-          "format": "cog",
-          "zIndex": 1
-        }
-      ],
-      "meta": {
-        "description": "Broadband surface albedo was derived from Sentinel-2 Level-2A surface reflectance using a narrow-to-broadband conversion approach based on the coefficients presented in “Albedo Retrieval From Sentinel-2 by New Narrow-to-Broadband Conversion Coefficients” (2020). After cloud masking, a median composite (2024) was generated, and albedo was calculated as a weighted linear combination of Sentinel-2 bands (B2, B3, B4, B8, B11, B12). The resulting product represents the fraction of incoming solar radiation reflected by the surface at 10 m resolution, suitable for analyzing urban reflectivity and surface energy balance over ESA ESRIN Campus. An albedo map shows how much sunlight the surface reflects: lower values (darker colors) indicate surfaces that absorb more heat, while higher values (warmer colors) indicate brighter surfaces that reflect more sunlight.",
-        "categories": [],
-        "min": 0.13,
-        "max": 0.35,
-        "startColor": "#f0f01d",
-        "endColor": "#eb1f10"
-      },
-      "layout": {
-        "interfaceGroup": "ESA ESRIN Albedo",
-        "layerCard": {
-          "toggleable": true,
-          "legend": {
-            "type": "gradient"
-          },
-          "controls": {
-            "opacitySlider": true,
-            "zoomToCenter": true,
-            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_Albedo_2016_COG_LST.tif"
-          }
-        }
-      }
-    },
-	{
-      "name": "ESA ESRIN Albedo 2020",
-      "isActive": false,
-      "data": [
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_Albedo_2020_COG_LST.tif",
-          "format": "cog",
-          "zIndex": 1
-        }
-      ],
-      "meta": {
-        "description": "Broadband surface albedo was derived from Sentinel-2 Level-2A surface reflectance using a narrow-to-broadband conversion approach based on the coefficients presented in “Albedo Retrieval From Sentinel-2 by New Narrow-to-Broadband Conversion Coefficients” (2020). After cloud masking, a median composite (2024) was generated, and albedo was calculated as a weighted linear combination of Sentinel-2 bands (B2, B3, B4, B8, B11, B12). The resulting product represents the fraction of incoming solar radiation reflected by the surface at 10 m resolution, suitable for analyzing urban reflectivity and surface energy balance over ESA ESRIN Campus. An albedo map shows how much sunlight the surface reflects: lower values (darker colors) indicate surfaces that absorb more heat, while higher values (warmer colors) indicate brighter surfaces that reflect more sunlight.",
-        "categories": [],
-        "min": 0.13,
-        "max": 0.33,
-        "startColor": "#f0f01d",
-        "endColor": "#eb1f10"
-      },
-      "layout": {
-        "interfaceGroup": "ESA ESRIN Albedo",
-        "layerCard": {
-          "toggleable": true,
-          "legend": {
-            "type": "gradient"
-          },
-          "controls": {
-            "opacitySlider": true,
-            "zoomToCenter": true,
-            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_Albedo_2020_COG_LST.tif"
-          }
-        }
-      }
-    },
-	{
-      "name": "ESA ESRIN Albedo 2024",
-      "isActive": false,
-      "data": [
-        {
-          "url": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_Albedo_2024_COG_LST.tif",
-          "format": "cog",
-          "zIndex": 1
-        }
-      ],
-      "meta": {
-        "description": "Broadband surface albedo was derived from Sentinel-2 Level-2A surface reflectance using a narrow-to-broadband conversion approach based on the coefficients presented in “Albedo Retrieval From Sentinel-2 by New Narrow-to-Broadband Conversion Coefficients” (2020). After cloud masking, a median composite (2024) was generated, and albedo was calculated as a weighted linear combination of Sentinel-2 bands (B2, B3, B4, B8, B11, B12). The resulting product represents the fraction of incoming solar radiation reflected by the surface at 10 m resolution, suitable for analyzing urban reflectivity and surface energy balance over ESA ESRIN Campus. An albedo map shows how much sunlight the surface reflects: lower values (darker colors) indicate surfaces that absorb more heat, while higher values (warmer colors) indicate brighter surfaces that reflect more sunlight.",
-        "categories": [],
-        "min": 0.135,
-        "max": 0.352,
-        "startColor": "#f0f01d",
-        "endColor": "#eb1f10"
-      },
-      "layout": {
-        "interfaceGroup": "ESA ESRIN Albedo",
-        "layerCard": {
-          "toggleable": true,
-          "legend": {
-            "type": "gradient"
-          },
-          "controls": {
-            "opacitySlider": true,
-            "zoomToCenter": true,
-            "download": "https://storage.googleapis.com/eo_best_practices_2023/EOenergy/ESA_ESRIN_Albedo_2024_COG_LST.tif"
-          }
-        }
-      }
-    },
-	{
       "name": "ESA ESRIN LST analysis area 2024",
       "isActive": false,
       "meta": {
-        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m\u00b2 in 2024 over ESA ESRIN, Frascati, Italy.",
+        "description": "Analysis of Land Surface Temperature (LST) with correlation to Surface Solar Irradiation (SSI) above threshold of 50 W/m² in 2024 over ESA ESRIN, Frascati, Italy.",
         "attribution": {
           "text": "GMV",
           "url": "https://www.gmv.com/en-es"
@@ -2296,5 +1704,17 @@
         }
       ]
     }
-  ]
+  ],
+  "env": {
+    "KEYCLOAK_CLIENT_ID": "",
+    "KEYCLOAK_URL": "https://auth.apex.esa.int",
+    "FEATURE_FLAGS": {
+      "KEYCLOAK_ACTIVE": false
+    },
+    "BUILD_TIME": "2026-03-11T11:45:36+00:00",
+    "TIMESTAMP": "2026-06-17T11:51:44+00:00",
+    "SOURCE": "remote",
+    "VERSION": "3.6.0"
+  }
 }
+
